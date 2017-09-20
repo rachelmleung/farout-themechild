@@ -1,0 +1,472 @@
+/*
+ Theme Name:   faroutrachel Theme Child
+ Theme URI:    http://example.com/faroutrachel-theme-child/
+ Description:  faroutrachel Child Theme - faroutrachel
+ Author:       Your Name!
+ Author URI:   http://example.com
+ Template:     faroutrachel-theme
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  faroutrachel-theme-child
+*/
+
+ 	
+@import url("../faroutrachel-theme/style.css");
+
+
+.home-page {
+    background: #fff;
+
+}
+
+#masthead {
+  background: none repeat scroll 0 0 #E31F72;
+}
+
+button.addtoany_content_bottom {
+    display:hidden;
+}
+
+a.button, a.button:link{
+	background: none repeat scroll 0 0 #092BB5;
+}
+a.button, a.button:hover{
+	background: none repeat scroll 0 0 rgba(9, 43, 181, 0.82);
+}
+.hero-content h3{
+    color:#333;
+}
+.blog-post{
+    width:50%;
+    float:left;
+    margin-bottom: 2em;
+}
+
+.blog-post h4 {
+    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #a6a6a6;
+    text-transform:uppercase;
+    margin: 2em 0 .5em;
+}
+
+.blog-post p {
+    width:90%;
+    margin: 0 10% 0 0;
+    
+}
+
+.get-to-know {
+    margin: 4em 0 1.5em 0;
+}
+
+ul.get-to-know {
+    list-style:none;
+    padding-left:0;
+    width:90%;
+    margin: 0 10% 0 0;
+
+}
+
+li.get-to-know {
+}
+
+.widget_media_image {
+    float:right;
+    display: inline;
+    width:40%;
+}
+.home-about {
+    width:55%;
+    float:left;
+    margin: 0;
+}
+.home-about h4 {
+    font: 1.2em 'Open Sans', Arial, sans-serif;
+    color: #a6a6a6;
+    line-height: 1.8em;
+    margin:0 0 10% 0;
+}
+
+.home-about a.button {
+}
+
+.widget-title {
+    display: none;
+}
+.read-more-link {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color:#45ac9d;
+    text-transform:uppercase;
+    margin: 5% 0 0 0;
+}
+
+
+#pi_simpletwittertweets-2 {
+    margin: 0 0 0 10%;
+}
+
+
+/* ============= HOME - Featured Work ============*/ 
+.featured-work .site-content {
+    display:block;
+}
+
+.featured-work {
+    margin: 0 0 8% 0;
+}
+.featured-work h4 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 5% 0;
+}
+.featured-work h3{
+    margin: 2% 0 0 0;
+    font-size: 1em;
+    text-align: center;
+}
+
+ul.homepage-featured {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.homepage-featured {
+    width:100%;
+    
+}
+
+li.individual-featured-work {
+    /*display: inline-block;*/
+    float:left;
+    width:29%;
+    margin: 0 2% 0 2%;
+}
+
+/* =============== CASE STUDIES PAGE ================ */
+
+
+
+/* ============ CASE STUDIES - Individual Page =========== */
+
+.case-study {
+    width:100%;
+    margin: 8% 0 0 0;
+}
+aside.case-study-sidebar {
+    width:33%;
+    float:left;
+    margin: 0 7% 0 0;
+    
+}
+aside.case-study-sidebar h2{
+    font-weight: 300;
+    
+}
+
+aside.case-study-sidebar h4{
+    font-weight:100;
+    font-size: .9em;
+    margin:0 0 3% 0;
+    
+}
+
+aside.case-study-sidebar p {
+    font-size: 1em;
+    
+}
+
+.case-study-images {
+    float:left;
+    width:60%;
+    margin: 7% 0 7% 0;
+}
+
+.case-study-images img {
+    display:block;
+    border: 1px solid #838383;
+    margin: 0 0 10% 0;
+    width:100%;
+}
+
+/*=============== About Page =====================*/
+
+.about-page {
+    margin: 5% 0 0 0;
+}
+
+
+.about-page p {
+    color:#0931B7;
+    margin:auto;
+    width:34%;
+    font-size:1.2em;
+    padding: 5% 0 7% 0;
+    text-align: center;
+
+}
+
+.about-intro {
+    margin: 0 0 5% 0;
+}
+.about-intro h1 {
+    font-family: 'Monoton';
+    text-align: center;
+    font-size: 4em;
+    color: #e31f72;
+    line-height: normal;
+}
+
+.about-intro h4 {
+    font-family: 'Lato';
+    margin:auto;
+    width:32%;
+    text-align: center;
+    color: #092bb5;
+}
+.more-about  {
+    width:100%;
+    margin: 0 0 10% 0;
+}
+.more-about h3 {
+    width:100%;
+    font-size: 1em;
+    font-family: 'Open Sans';
+    font-weight: 100;
+}
+
+.our-services .site-content {
+    display:block;
+
+}
+
+.our-services {
+    margin: 0 0 5% 0;
+}
+.our-services h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .8em;
+    margin: 7% 0 1% 0;
+}
+.our-services p {
+    width:55%;
+    text-align: center;
+    font-size: 1em;
+    margin: 0 25% 0 25%;
+}
+
+.our-services h3{
+    margin: 2% 0 0 0;
+    font-size: 1em;
+    text-align: center;
+}
+
+ul.services-featured {
+    list-style-type: none;
+    margin: 8% 0 0 0;
+    padding: 0;
+}
+
+.services-featured {
+    width:100%;
+    
+}
+
+
+figure {
+    padding: 0;
+    margin: 0;
+}
+
+li.individual-featured-service {
+    display: inline-block;
+    margin: 0 0 7% 0;
+}
+
+
+
+/* 1st and 3rd - Odd stylings*/
+li.individual-featured-service figure img {
+    float:left;  
+}
+
+li.individual-featured-service figure h2 {
+    width:65%;
+    text-align: left;
+    font-family: 'open sans';
+    float:right;
+    margin:0;
+}
+
+
+li.individual-featured-service figure p {
+    width:65%;
+    float:right;
+    margin: 0;
+    text-align: left;
+
+}
+
+
+/* 2nd and 4th - Even stylings*/
+
+li.individual-featured-service:nth-child(even) figure img {
+    float:right;
+}
+
+li.individual-featured-service:nth-child(even) figure h2 {
+    /*float:right;*/
+    margin: 0 12% 0 0;
+
+}
+
+li.individual-featured-service:nth-child(even) p {
+
+    margin: 0 12% 0 0;
+}
+
+
+
+
+.about-contact {
+    margin: 0;
+    text-align: center;
+}
+
+hr {
+    margin: 3% 0 0 0;
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #BFBFBF; /* old IE */
+    background-color: #BFBFBF; /* Modern Browsers */
+
+}
+
+.about-contact h2 {
+    text-align: center;
+    display: inline-block;
+    margin: 10% 0 0 0;
+
+}
+
+.about-contact button {
+    margin: 0 0 0 5%;
+    background-color:#45AC9D;
+    padding: 1% 5% 1% 5%;
+    color:#fff;
+    font-weight: bold;
+    font-family: 'Open Sans';
+    font-size: 1em;
+    border-style: none;
+
+}
+
+.about-contact button:hover {
+    background: rgba(69, 172, 157, 0.77) !important;
+    border: 0;
+}
+
+/*=============== Contact Us =====================*/
+
+/* Created custom body class using the solution by Sam Kent below */ 
+/* https://developer.wordpress.org/reference/functions/body_class/ */
+
+/* Also, briefly discussed in Skillcrush 103, linked below */
+/* https://learn.skillcrush.com/module-13/make-your-pages-look-like-the-design/ */
+
+.page-template-default h1 { /* see note above */
+    width:70%;
+    margin: 0 15% 0 15%;    
+}
+
+.contact-us {
+   width:70%;
+    margin: 0 15% 0 15%;
+
+}
+
+.contact-name {
+    width:48%;
+    display: inline-block;
+}
+
+h1.contact-intro {
+    width:70%;
+    margin: 0 15% 0 15%;    
+}
+.contact-intro {
+    width:70%;
+    margin: 0 15% 0 15%;
+}
+.contact-intro p {
+    margin:0 0 5% 0;
+}
+
+/* removes "required" sentence and asterisks */
+.ninja-forms-req-symbol {
+  display: none;
+}
+
+.nf-form-fields-required {
+  display: none;
+}
+
+.nf-field-label label {
+    font-size: .9em;
+}
+    
+.contact-email {
+    width:48%;
+    float:right;
+}
+
+.contact-submit{
+    float:right;
+}
+    
+#nf-field-4 {
+    background: #45AC9D !important;
+    box-shadow: none !important;
+    text-shadow: none;
+    border: 0;
+    transition: background 0.2s ease-in-out;
+}
+
+#nf-field-4:hover {
+    background: rgba(69, 172, 157, 0.77) !important;
+    border: 0;
+}
+
+
+/*========================== 4040 Page =================*/
+
+.your-adventure h1 {
+    font-size: 3em;
+    color:#45AC9D;
+    text-align:center;
+}
+.your-adventure h3 {
+    text-align:center;
+    margin: 0 0 5% 0;
+}
+
+hr {
+    margin: 0 0 5% 0;
+}
+
+.adventures p {
+    font-style: italic;
+}
+
+.adventures a {
+    color:#45AC9D;
+}
+
+.adventures a:hover {
+    color:rgba(69, 172, 157, 0.77);
+    border-bottom:1px solid rgba(69, 172, 157, 0.77) ;
+
+}
