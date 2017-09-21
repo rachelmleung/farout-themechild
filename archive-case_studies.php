@@ -32,7 +32,10 @@ get_header(); ?>
                         
                         
         <article class="case-study">   
+            
             <aside class="case-study-sidebar">
+                
+                
                 <?php $size = "full"; ?>
                 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>  
                 <h4><?php echo $services; ?></h4>

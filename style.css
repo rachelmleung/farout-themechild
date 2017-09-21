@@ -20,8 +20,46 @@
 }
 
 #masthead {
-  background: none repeat scroll 0 0 #E31F72;
+  background: none repeat scroll 0 0 #fff;
 }
+
+#masthead .title {
+    color:#a6a6a6;
+}
+
+#masthead a {
+  color: #a6a6a6;
+}
+#masthead a:hover {
+  color: #848484;
+}
+
+.home-intro h1 {
+    color:#e31f72;
+    font-family: 'Monoton';
+    font-size: 5em;
+    line-height: 1em;
+}
+
+
+.home-intro h3 {
+    font-family: 'Lato';
+    font-size: 1em; /* play with font size, not important line so compromise*/
+    margin: 1% 0 0 0;
+    text-transform: uppercase;
+    word-spacing: .3em;
+
+}
+
+.home-intro h2 {
+    /* NEED TO FIX FONT*/
+    margin: 8% 0 3% 0;
+    font-family: 'Lato';
+    font-weight: 100;
+    text-transform: uppercase;
+    word-spacing: .3em;
+}
+
 
 button.addtoany_content_bottom {
     display:hidden;
@@ -29,9 +67,12 @@ button.addtoany_content_bottom {
 
 a.button, a.button:link{
 	background: none repeat scroll 0 0 #092BB5;
+
 }
+
 a.button, a.button:hover{
 	background: none repeat scroll 0 0 rgba(9, 43, 181, 0.82);
+
 }
 .hero-content h3{
     color:#333;
@@ -43,7 +84,7 @@ a.button, a.button:hover{
 }
 
 .blog-post h4 {
-    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    font: 700 1em/1.75 'Montserrat', 'Lato', Arial, sans-serif;
     color: #a6a6a6;
     text-transform:uppercase;
     margin: 2em 0 .5em;
@@ -52,14 +93,29 @@ a.button, a.button:hover{
 .blog-post p {
     width:90%;
     margin: 0 10% 0 0;
-    
 }
 
+
+.home-bottom {
+    margin:0 0 5% 0;
+}
 .get-to-know {
-    margin: 4em 0 1.5em 0;
+
 }
 
-ul.get-to-know {
+
+.get-to-know h4 {
+    font-family: 'lato';
+    font-size: 1.2em;
+    line-height: 1.8em;
+    font-weight: 100;
+    width:;
+    margin: 0 0 5% 0;
+}
+
+
+
+/*ul.get-to-know {
     list-style:none;
     padding-left:0;
     width:90%;
@@ -69,19 +125,16 @@ ul.get-to-know {
 
 li.get-to-know {
 }
+*/
 
-.widget_media_image {
-    float:right;
-    display: inline;
-    width:40%;
-}
+
 .home-about {
     width:55%;
     float:left;
     margin: 0;
 }
 .home-about h4 {
-    font: 1.2em 'Open Sans', Arial, sans-serif;
+    font: 1.2em 'Lato', Arial, sans-serif;
     color: #a6a6a6;
     line-height: 1.8em;
     margin:0 0 10% 0;
@@ -92,13 +145,6 @@ li.get-to-know {
 
 .widget-title {
     display: none;
-}
-.read-more-link {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    color:#45ac9d;
-    text-transform:uppercase;
-    margin: 5% 0 0 0;
 }
 
 
@@ -208,22 +254,28 @@ aside.case-study-sidebar p {
 }
 
 .about-intro {
-    margin: 0 0 5% 0;
+    margin: 0 0 7% 0;
 }
 .about-intro h1 {
     font-family: 'Monoton';
     text-align: center;
-    font-size: 4em;
+    font-size: 5em;
     color: #e31f72;
     line-height: normal;
 }
 
 .about-intro h4 {
     font-family: 'Lato';
+    font-size: 1.3em;
     margin:auto;
-    width:32%;
+    width:40%;
     text-align: center;
     color: #092bb5;
+}
+
+.main-about-me {
+    background:#f7dfcb;
+    padding:4% 0 5% 0;
 }
 .more-about  {
     width:100%;
@@ -231,9 +283,11 @@ aside.case-study-sidebar p {
 }
 .more-about h3 {
     width:100%;
-    font-size: 1em;
-    font-family: 'Open Sans';
+    line-height: 1.8em;
+    font-size: 1.2em;
+    font-family: 'Lato';
     font-weight: 100;
+
 }
 
 .our-services .site-content {
@@ -243,18 +297,21 @@ aside.case-study-sidebar p {
 
 .our-services {
     margin: 0 0 5% 0;
+    background-color: #fff;
+}
+
+.our-services h3{
 }
 .our-services h4 {
     text-align: center;
     text-transform: uppercase;
-    font-size: .8em;
+    font-size: 1em;
     margin: 7% 0 1% 0;
 }
 .our-services p {
-    width:55%;
     text-align: center;
-    font-size: 1em;
-    margin: 0 25% 0 25%;
+    font-size: 1.1em;
+    margin: 0;
 }
 
 .our-services h3{
@@ -286,7 +343,6 @@ li.individual-featured-service {
 }
 
 
-
 /* 1st and 3rd - Odd stylings*/
 li.individual-featured-service figure img {
     float:left;  
@@ -295,7 +351,7 @@ li.individual-featured-service figure img {
 li.individual-featured-service figure h2 {
     width:65%;
     text-align: left;
-    font-family: 'open sans';
+    font-family: 'Lato';
     float:right;
     margin:0;
 }
@@ -308,7 +364,6 @@ li.individual-featured-service figure p {
     text-align: left;
 
 }
-
 
 /* 2nd and 4th - Even stylings*/
 
@@ -345,6 +400,18 @@ hr {
 
 }
 
+.about-cta {
+}
+
+.about-cta h4 {
+    text-transform: none;
+    font-size: 1em;
+    font-weight: 100;
+    text-align: left;
+}
+
+/*
+
 .about-contact h2 {
     text-align: center;
     display: inline-block;
@@ -358,7 +425,7 @@ hr {
     padding: 1% 5% 1% 5%;
     color:#fff;
     font-weight: bold;
-    font-family: 'Open Sans';
+    font-family: 'Lato';
     font-size: 1em;
     border-style: none;
 
@@ -367,7 +434,7 @@ hr {
 .about-contact button:hover {
     background: rgba(69, 172, 157, 0.77) !important;
     border: 0;
-}
+}*/
 
 /*=============== Contact Us =====================*/
 
@@ -428,7 +495,7 @@ h1.contact-intro {
 }
     
 #nf-field-4 {
-    background: #45AC9D !important;
+    background: #092BB5 !important;
     box-shadow: none !important;
     text-shadow: none;
     border: 0;
@@ -436,16 +503,42 @@ h1.contact-intro {
 }
 
 #nf-field-4:hover {
-    background: rgba(69, 172, 157, 0.77) !important;
+	background: none repeat scroll 0 0 rgba(9, 43, 181, 0.82) !important;
     border: 0;
 }
 
+/*==========BLOG ==============*/'
 
-/*========================== 4040 Page =================*/
+.read-more-link {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-transform:uppercase;
+    margin: 5% 0 0 0;
+}
+
+.read-more-link a {
+    color:#092BB5;
+}
+.read-more-link a:hover {
+    color:rgba(9, 43, 181, 0.82);
+} 
+.entry-title a:hover {
+    color: #848484;
+}
+
+.entry-time {
+    color: #092BB5;
+}
+
+.entry-footer .entry-terms a:hover {
+    border-bottom: 1px solid #092BB5;
+}
+
+/*========================== 404 Page =================*/
 
 .your-adventure h1 {
     font-size: 3em;
-    color:#45AC9D;
+    color:#e31f72;
     text-align:center;
 }
 .your-adventure h3 {
@@ -462,11 +555,11 @@ hr {
 }
 
 .adventures a {
-    color:#45AC9D;
+    color:#092BB5;
 }
 
 .adventures a:hover {
-    color:rgba(69, 172, 157, 0.77);
-    border-bottom:1px solid rgba(69, 172, 157, 0.77) ;
+    color:rgba(9, 43, 181, 0.82);
+    border-bottom:1px solid #e31f72 ;
 
 }

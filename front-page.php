@@ -18,7 +18,7 @@ get_header(); ?>
 		<div class="main-content" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php the_content(); ?>
-				<a class="button" href="<?php echo site_url('/case-studies/') ?>">View Our Work</a>
+				<a class="button" href="<?php echo site_url('/case-studies/') ?>">View My Work</a>
 			<?php endwhile; // end of the loop. ?>
 		</div><!-- .main-content -->
 	</div><!-- #primary -->
@@ -38,7 +38,7 @@ get_header(); ?>
             <li class="individual-featured-work">
 
                  <figure>
-                    <?php echo wp_get_attachment_image($image_1, $size); ?>
+                     <a href="<?php the_permalink(); ?>"> <?php echo wp_get_attachment_image($image_1, $size); ?></a>
                 </figure>
 
                 <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
@@ -51,17 +51,20 @@ get_header(); ?>
     </div>
 </section>
 
-<section class="recent-posts">
- <div class="site-content">
-    
+<section class="home-bottom">
+ <div class="site-content clearfix">
     <div class="get-to-know"> 
-        <h4>  </h4>  
-        <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-        <div id="secondary" class="widget-area" role="complementary">
-            <?php dynamic_sidebar( 'sidebar-1' ); ?>
-        </div>
+            <?php while ( have_posts() ) : the_post(); 
+
+                $get_to_know = get_field('get_to_know');
+                $home_img = get_field('home_img');
+            ?>
+        <h4> <?php echo $get_to_know; ?></h4>  
+        <a class="button" href="<?php echo site_url('/about/') ?>">Get To Know Me</a>
+       <!-- <p><?php echo wp_get_attachment_image($home_img, $size); ?></p> -->
+                <?php endwhile; ?>     
     </div>
-<?php endif; ?>
+     
   </div>
 </section>
 

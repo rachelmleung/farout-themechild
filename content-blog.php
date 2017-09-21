@@ -14,7 +14,9 @@
 	<div class="entry-wrap">
 		<header class="entry-header">
 			<div class="entry-meta">
-				<h3 class="entry-time"><?php echo get_the_date(); ?></h3>
+                
+				<!--<h3 class="entry-time"><?php echo get_the_date(); ?></h3>-->
+                
 			</div>
 			<h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 		</header>
@@ -28,13 +30,15 @@
 		</div>
 		<footer class="entry-footer">
 			<div class="entry-meta">
-				<span class="entry-terms comments author">
+                
+				<!--<span class="entry-terms comments author">
 					Written by <?php the_author_posts_link(); ?>
 					/
 					Posted in <?php the_category(', '); ?>
 					/
-					<a href="<?php comments_link(); ?>"><?php comments_number( '<span>No Comments</span>', '1 Comment', '% comments' ); ?></a>
-				</span>
+					<a href="<?php comments_link(); ?>"><?php comments_number( '<span>No Comments</span>', '1 Comment', '% comments' ); ?></a> 
+				</span>-->
+                
 			</div>
 		</footer>
 	</div>
