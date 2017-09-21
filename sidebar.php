@@ -40,7 +40,7 @@
 				</ul>
 			</aside>
 
-			<aside class="widget widget_archive">
+		<!--	<aside class="widget widget_archive">
 				<h2 class="widget-title">Archives</h2>
 				<ul>
 					<li><a href="">September 2014</a></li>
@@ -59,6 +59,6 @@
 					<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/Etsy.png" alt=""/></a></li>
 				</ul>
 			</aside>
-		</div>
+		</div> -->
 	<?php endif; ?>
 </div>

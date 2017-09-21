@@ -517,23 +517,37 @@ h1.contact-intro {
 }
 
 .read-more-link a {
-    color:#092BB5;
+    color:#a6a6a6;
+    text-transform: uppercase;
 }
 .read-more-link a:hover {
-    color:rgba(9, 43, 181, 0.82);
+  color: #848484;
+
 } 
-.entry-title a:hover {
+
+
+.entry-title a {
     color: #848484;
 }
 
+.entry-title a:hover {
+    color: #a8a7a7;
+}
+
 .entry-time {
-    color: #092BB5;
+    display:none;
 }
 
 .entry-footer .entry-terms a:hover {
     border-bottom: 1px solid #092BB5;
 }
 
+
+/*==================== Individual Blog Posts ============== */
+
+.entry-header h2 {
+    color: #848484;
+} 
 /*========================== 404 Page =================*/
 
 .your-adventure h1 {
