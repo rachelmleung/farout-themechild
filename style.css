@@ -40,6 +40,19 @@ hr {
     padding: 0;
 }
 
+a {
+     transition: 0.3s;
+}
+
+a:hover {
+    
+        -webkit-transition: all 500ms ease; /* slows down hover effect*/
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+transition: all 500ms ease;
+}
+
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
@@ -107,6 +120,13 @@ textarea {
 
 #masthead a:hover {
   color: #092bb5;
+
+    -webkit-transition: all 500ms ease; /* slows down hover effect*/
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+transition: all 500ms ease;
+    
 }
 
 .home-intro h1 {
@@ -145,8 +165,16 @@ a.button, a.button:link{
 
 }
 
-a.button:hover{
+a.button:link:hover{
 	background: rgba(31, 64, 196, 0.82);
+    
+        -webkit-transition: all 500ms ease; /* slows down hover effect*/
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+transition: all 500ms ease;
+    
+    
 
 }
 .hero-content h3{
@@ -224,30 +252,6 @@ li.get-to-know {
     display: ;
 }
 
-#sidebar h2 {
-    color:#e31f72;
-}
-
-
-#pi_simpletwittertweets-2 {
-    margin: 0 0 0 10%;
-}
-
-#sidebar .widget_search input[type="submit"] {
-    width: 13%;
-    border-top: 1px solid #a6a6a6;
-    border-bottom: 1px solid #a6a6a6;
-    border-right: 1px solid #a6a6a6;
-    border-left: none;
-    font: .875em/1.75em 'Open Sans', Arial, sans-serif;
-    height: 2.6rem;
-    background: url('img/white-arrow-right.png') no-repeat center #092bb5;
-    color: #ffffff;
-    margin-left: -5px;
-    padding: 0;
-    vertical-align: middle;
-}
-
 
 /* ============= HOME - Featured Work ============*/ 
 .featured-work .site-content {
@@ -264,15 +268,25 @@ li.get-to-know {
 
 .featured-work h4 {
     text-align: center;
-    font-size: 1.2em;
-    color:#000;
+    font-size: 1.8em;
+    color:#fff;
+    letter-spacing: 2px;
     text-transform: uppercase;
     margin: 0 0 7% 0;
+        text-shadow:
+    -1px -1px 0 #a6a6a6,
+    1px -1px 0 #a6a6a6,
+    -1px 1px 0 #a6a6a6,
+    1px 1px 0 #a6a6a6;
 }
 .featured-work h3{
-    margin: 2% 0 0 0;
+    margin: 10% 0 0 0;
     font-size: 1em;
+    letter-spacing: 1px;
     text-align: center;
+    color:#666;
+
+
 }
 
 ul.homepage-featured {
@@ -553,6 +567,141 @@ hr {
     border: 0;
 }*/
 
+
+/*==========BLOG ==============*/'
+
+.read-more-link {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-transform:uppercase;
+    margin: 5% 0 0 0;
+}
+
+.read-more-link a {
+    color:#092BB5;
+    text-transform: uppercase;
+    
+
+}
+.read-more-link a:hover {
+    color: rgba(31, 64, 196, 0.82);
+    border-bottom: 1px solid; 
+    
+    -webkit-transition: all 500ms ease; /* slows down hover effect*/
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;    
+
+} 
+
+
+.entry-title a {
+    color: #a6a6a6;
+}
+
+.entry-title a:hover {
+    color: #a6a6a6;
+}
+
+.entry-time {
+    display:none;
+}
+
+.entry-footer .entry-terms a:hover {
+    border-bottom: 1px solid #092BB5;
+}
+
+.post-entry {
+    border-bottom: none;
+    padding-bottom: 1.875em;
+    margin-bottom: 1.875em;
+}
+
+#sidebar {
+    display: block;
+    width: 31%;
+    min-width: 15em;
+    border-left: none;
+    margin-left: 3em;
+}
+
+/*============== BLOG SIDEBAR =======*/
+
+#sidebar h2 {
+    color:#e31f72;
+}
+
+#sidebar .widget_search {
+    border-bottom: none;
+}
+
+#sidebar .widget_search input[type="submit"] {
+    width: 13%;
+    border-top: 1px solid #a6a6a6;
+    border-bottom: 1px solid #a6a6a6; 
+    border-right: 1px solid #a6a6a6;
+    border-left: none;
+    font: .875em/1.75em 'Open Sans', Arial, sans-serif;
+    height: 2.6rem;
+    background: url('img/white-arrow-right.png') no-repeat center #092bb5;
+    color: #ffffff;
+    margin-left: -5px;
+    padding: 0;
+    vertical-align: middle;
+}
+
+
+
+#sidebar ul li a {
+    color: #3b3b3b;
+    font-weight: 100;
+}
+#sidebar ul li a:hover {
+    color: #3b3b3b;
+    font-weight: 100;
+    border-bottom: 1px solid #3b3b3b;
+}
+
+#navigation {
+    border-top:none;
+}
+
+
+/*==================== Individual Blog Posts ============== */
+
+.entry-header h2 {
+    color: #e31f72;
+} 
+
+.entry-footer .entry-terms {
+    display: none;
+}
+
+/* -- back to posts & arrow -- */
+#navigation .left a, #navigation .right a {
+    color: #a6a6a6 ;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#navigation .left a span {
+    color: #092bb5;
+    text-decoration: none;
+}
+
+#navigation .right a span {
+    color: #092bb5;
+    text-decoration: none;
+}
+
+
+#navigation .left a:hover span, #navigation .right a:hover span {
+    color: rgba(31, 64, 196, 0.82);
+    text-decoration: none;
+}
+
 /*=============== Contact Us =====================*/
 
 /* Created custom body class using the solution by Sam Kent below */ 
@@ -577,16 +726,24 @@ hr {
     display: inline-block;
 }
 
-h1.contact-intro {
-    width:70%;
-    margin: 0 15% 0 15%;    
-}
 .contact-intro {
-    width:70%;
-    margin: 0 15% 0 15%;
+    margin: 0 0 7% 0;
 }
-.contact-intro p {
-    margin:0 0 5% 0;
+.contact-intro h1 {
+    font-family: 'Monoton';
+    text-align: center;
+    font-size: 5em;
+    color: #e31f72;
+    line-height: normal;
+}
+
+.contact-intro h4 {
+    font-family: 'Lato';
+    font-size: 1.3em;
+    margin:auto;
+    width:60%;
+    text-align: center;
+    color: #092bb5;
 }
 
 /* removes "required" sentence and asterisks */
@@ -622,63 +779,15 @@ h1.contact-intro {
 #nf-field-4:hover {
 	background: none repeat scroll 0 0 rgba(9, 43, 181, 0.82) !important;
     border: 0;
+
+    -webkit-transition: all 500ms ease; /* slows down hover effect*/
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+transition: all 500ms ease;
 }
 
-/*==========BLOG ==============*/'
 
-.read-more-link {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    text-transform:uppercase;
-    margin: 5% 0 0 0;
-}
-
-.read-more-link a {
-    color:#092BB5;
-    text-transform: uppercase;
-}
-.read-more-link a:hover {
-    color: rgba(9, 43, 181, 0.82);
-    border-bottom: 1px solid; 
-
-} 
-
-
-.entry-title a {
-    color: #666;
-}
-
-.entry-title a:hover {
-    color: #777;
-}
-
-.entry-time {
-    display:none;
-}
-
-.entry-footer .entry-terms a:hover {
-    border-bottom: 1px solid #092BB5;
-}
-
-.post-entry {
-    border-bottom: none;
-    padding-bottom: 1.875em;
-    margin-bottom: 1.875em;
-}
-
-#sidebar {
-    display: block;
-    width: 31%;
-    min-width: 15em;
-    border-left: none;
-    margin-left: 3em;
-}
-
-/*==================== Individual Blog Posts ============== */
-
-.entry-header h2 {
-    color: #848484;
-} 
 /*========================== 404 Page =================*/
 
 .your-adventure h1 {
