@@ -156,15 +156,22 @@ li.get-to-know {
 /* ============= HOME - Featured Work ============*/ 
 .featured-work .site-content {
     display:block;
+
 }
 
 .featured-work {
-    margin: 0 0 8% 0;
+    margin: 7% 0 15% 0;
+    padding: 7% 0 7% 0;
+    background: #F7DFCB;
+
 }
+
 .featured-work h4 {
     text-align: center;
+    font-size: 1.2em;
+    color:#000;
     text-transform: uppercase;
-    margin: 0 0 5% 0;
+    margin: 0 0 7% 0;
 }
 .featured-work h3{
     margin: 2% 0 0 0;
@@ -274,7 +281,7 @@ aside.case-study-sidebar p {
 }
 
 .main-about-me {
-    background:#f7dfcb;
+    background:#e31f72;
     padding:4% 0 5% 0;
 }
 .more-about  {
@@ -287,6 +294,7 @@ aside.case-study-sidebar p {
     font-size: 1.2em;
     font-family: 'Lato';
     font-weight: 100;
+    color:#fff;
 
 }
 
@@ -400,6 +408,10 @@ hr {
 
 }
 
+.about-bottom {
+    margin:0 0 5% 0;
+}
+
 .about-cta {
 }
 
@@ -408,6 +420,12 @@ hr {
     font-size: 1em;
     font-weight: 100;
     text-align: left;
+    margin:0 0 5% 0;
+}
+
+.about a.button, a.button:link {
+    background: none repeat scroll 0 0 #092BB5;
+    margin-top: 15%;
 }
 
 /*

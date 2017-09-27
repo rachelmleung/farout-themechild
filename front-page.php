@@ -53,6 +53,7 @@ get_header(); ?>
 
 <section class="home-bottom">
  <div class="site-content clearfix">
+
     <div class="get-to-know"> 
             <?php while ( have_posts() ) : the_post(); 
 
