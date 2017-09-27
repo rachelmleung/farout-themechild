@@ -134,7 +134,6 @@ get_header(); ?>
 <section class="about-bottom">
  <div class="site-content clearfix">
     <div class="about-cta"> 
-           
         <h4> <?php echo $about_cta; ?></h4>  
         <a class="button" href="<?php echo site_url('/case-studies/') ?>">View My Work</a>
  

@@ -37,9 +37,9 @@ get_header(); ?>
                 
                 
                 <?php $size = "full"; ?>
-                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>  
+                <h2><?php the_title(); ?></h2>  
                 <h4><?php echo $services; ?></h4>
-                <h4><?php echo $client; ?></h4>
+                <!--<h4><?php echo $client; ?></h4>-->
                 <?php the_excerpt(); ?>
                 <p class="read-more-link"><a href="<?php the_permalink(); ?>">View Project</a></p>
             </aside>

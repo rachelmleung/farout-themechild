@@ -13,6 +13,78 @@
  	
 @import url("../faroutrachel-theme/style.css");
 
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}*
+
+/* ================= Browser Upgrade Prompt =================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   EDIT BELOW
+   ========================================================================== */
 
 .home-page {
     background: #fff;
@@ -28,10 +100,13 @@
 }
 
 #masthead a {
-  color: #a6a6a6;
+    color: #a6a6a6;
+    font-weight: bold;
 }
+
+
 #masthead a:hover {
-  color: #848484;
+  color: #092bb5;
 }
 
 .home-intro h1 {
@@ -53,7 +128,7 @@
 
 .home-intro h2 {
     /* NEED TO FIX FONT*/
-    margin: 8% 0 3% 0;
+    margin: 10% 0 3% 0;
     font-family: 'Lato';
     font-weight: 100;
     text-transform: uppercase;
@@ -66,12 +141,12 @@ button.addtoany_content_bottom {
 }
 
 a.button, a.button:link{
-	background: none repeat scroll 0 0 #092BB5;
+	background: #092bb5;
 
 }
 
-a.button, a.button:hover{
-	background: none repeat scroll 0 0 rgba(9, 43, 181, 0.82);
+a.button:hover{
+	background: rgba(31, 64, 196, 0.82);
 
 }
 .hero-content h3{
@@ -96,8 +171,10 @@ a.button, a.button:hover{
 }
 
 
+
+
 .home-bottom {
-    margin:0 0 5% 0;
+    margin: 0 0 5% 0;
 }
 .get-to-know {
 
@@ -110,7 +187,7 @@ a.button, a.button:hover{
     line-height: 1.8em;
     font-weight: 100;
     width:;
-    margin: 0 0 5% 0;
+    margin: 4% 0 5% 0;
 }
 
 
@@ -144,12 +221,31 @@ li.get-to-know {
 }
 
 .widget-title {
-    display: none;
+    display: ;
+}
+
+#sidebar h2 {
+    color:#e31f72;
 }
 
 
 #pi_simpletwittertweets-2 {
     margin: 0 0 0 10%;
+}
+
+#sidebar .widget_search input[type="submit"] {
+    width: 13%;
+    border-top: 1px solid #a6a6a6;
+    border-bottom: 1px solid #a6a6a6;
+    border-right: 1px solid #a6a6a6;
+    border-left: none;
+    font: .875em/1.75em 'Open Sans', Arial, sans-serif;
+    height: 2.6rem;
+    background: url('img/white-arrow-right.png') no-repeat center #092bb5;
+    color: #ffffff;
+    margin-left: -5px;
+    padding: 0;
+    vertical-align: middle;
 }
 
 
@@ -160,8 +256,8 @@ li.get-to-know {
 }
 
 .featured-work {
-    margin: 7% 0 15% 0;
-    padding: 7% 0 7% 0;
+    margin: 7% 0 5% 0;
+    padding: 7% 0 8% 0;
     background: #F7DFCB;
 
 }
@@ -210,11 +306,12 @@ li.individual-featured-work {
 aside.case-study-sidebar {
     width:33%;
     float:left;
-    margin: 0 7% 0 0;
+    margin: 2% 7% 0 0;
     
 }
 aside.case-study-sidebar h2{
-    font-weight: 300;
+    font-weight: bold;
+    color: #e31f72;
     
 }
 
@@ -222,6 +319,7 @@ aside.case-study-sidebar h4{
     font-weight:100;
     font-size: .9em;
     margin:0 0 3% 0;
+    color:#a6a6a6;
     
 }
 
@@ -412,7 +510,8 @@ hr {
     margin:0 0 5% 0;
 }
 
-.about-cta {
+.about-cta hr {
+
 }
 
 .about-cta h4 {
@@ -535,21 +634,22 @@ h1.contact-intro {
 }
 
 .read-more-link a {
-    color:#a6a6a6;
+    color:#092BB5;
     text-transform: uppercase;
 }
 .read-more-link a:hover {
-  color: #848484;
+    color: rgba(9, 43, 181, 0.82);
+    border-bottom: 1px solid; 
 
 } 
 
 
 .entry-title a {
-    color: #848484;
+    color: #666;
 }
 
 .entry-title a:hover {
-    color: #a8a7a7;
+    color: #777;
 }
 
 .entry-time {
@@ -560,6 +660,19 @@ h1.contact-intro {
     border-bottom: 1px solid #092BB5;
 }
 
+.post-entry {
+    border-bottom: none;
+    padding-bottom: 1.875em;
+    margin-bottom: 1.875em;
+}
+
+#sidebar {
+    display: block;
+    width: 31%;
+    min-width: 15em;
+    border-left: none;
+    margin-left: 3em;
+}
 
 /*==================== Individual Blog Posts ============== */
 

@@ -30,7 +30,7 @@ get_header(); ?>
                     <?php $size = "full"; ?>
                     <h2><?php the_title(); ?></h2>
                     <h4><?php echo $services; ?></h4>
-                    <h4><?php echo $client; ?></h4>
+                    <!--<h4><?php echo $client; ?></h4>-->
                     <?php the_content(); ?>
                     <p class="read-more-link"><a href="<?php echo $link; ?>">Visit Live Site ›</a></p>
                 </aside>

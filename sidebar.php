@@ -32,11 +32,11 @@
 			<aside class="widget widget_categories">
 				<h2 class="widget-title">Categories</h2>
 				<ul>
-					<li><a href="">Books </a></li>
-					<li><a href="">My Notes</a></li>
-					<li><a href="">Photos</a></li>
-					<li><a href="">Videos</a></li>
-					<li><a href="">Quotes</a></li>
+					<li><a href="">Art </a></li>
+					<li><a href="">DIY Projects </a></li>
+					<li><a href="">Photography </a></li>
+					<li><a href="">Dance </a></li>
+					<li><a href="">Sewing</a></li>
 				</ul>
 			</aside>
 
