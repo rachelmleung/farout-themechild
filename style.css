@@ -162,6 +162,7 @@ button.addtoany_content_bottom {
 
 a.button, a.button:link{
 	background: #092bb5;
+ box-shadow: 0 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
 }
 
@@ -274,10 +275,10 @@ li.get-to-know {
     text-transform: uppercase;
     margin: 0 0 7% 0;
         text-shadow:
-    -1px -1px 0 #a6a6a6,
-    1px -1px 0 #a6a6a6,
-    -1px 1px 0 #a6a6a6,
-    1px 1px 0 #a6a6a6;
+    -1px -1px 0 #888,
+    1px -1px 0 #888,
+    -1px 1px 0 #888,
+    1px 1px 0 #888;
 }
 .featured-work h3{
     margin: 10% 0 0 0;
@@ -358,7 +359,7 @@ aside.case-study-sidebar p {
 /*=============== About Page =====================*/
 
 .about-page {
-    margin: 5% 0 0 0;
+    margin: 0;
 }
 
 
@@ -739,6 +740,7 @@ hr {
     font-size: 5em;
     color: #e31f72;
     line-height: normal;
+
 }
 
 .contact-intro h4 {
@@ -779,10 +781,11 @@ hr {
     
 #nf-field-4 {
     background: #092BB5 !important;
-    box-shadow: none !important;
+    box-shadow: 0 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     text-shadow: none;
     border: 0;
     transition: background 0.2s ease-in-out;
+
 }
 
 #nf-field-4:hover {
@@ -801,7 +804,7 @@ transition: all 500ms ease;
 
 .your-adventure h1 {
     font-family: 'Monoton';
-    font-size: 4em;
+    font-size: 5em;
     color:#e31f72;
     text-align:center;
     line-height: 1.3em;
