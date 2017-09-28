@@ -32,6 +32,8 @@ get_header(); ?>
         			<?php endwhile; // end of the loop. ?>
                 <div class="more-about">
                     <h3><?php echo $more_about; ?></h3>
+                    <center><a class="button" href="<?php echo site_url('/blog/') ?>">Keep Things Interesting</a></center>
+                    
                 </div>
     </div>
 </section>

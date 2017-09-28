@@ -394,12 +394,15 @@ aside.case-study-sidebar p {
 
 .main-about-me {
     background:#e31f72;
-    padding:4% 0 5% 0;
+    padding:5% 0 7% 0;
 }
 .more-about  {
     width:100%;
     margin: 0 0 10% 0;
+    
 }
+
+
 .more-about h3 {
     width:100%;
     line-height: 1.8em;
@@ -407,7 +410,12 @@ aside.case-study-sidebar p {
     font-family: 'Lato';
     font-weight: 100;
     color:#fff;
+    margin: 0 0 7% 0;
+}
 
+
+.more-about a.button:link {
+    margin: 0 0 0 0;
 }
 
 .our-services .site-content {
@@ -721,10 +729,6 @@ hr {
 
 }
 
-.contact-name {
-    width:48%;
-    display: inline-block;
-}
 
 .contact-intro {
     margin: 0 0 7% 0;
@@ -759,6 +763,11 @@ hr {
     font-size: .9em;
 }
     
+.contact-name {
+    width:48%;
+    display: inline-block;
+}
+
 .contact-email {
     width:48%;
     float:right;
@@ -791,9 +800,11 @@ transition: all 500ms ease;
 /*========================== 404 Page =================*/
 
 .your-adventure h1 {
-    font-size: 3em;
+    font-family: 'Monoton';
+    font-size: 4em;
     color:#e31f72;
     text-align:center;
+    line-height: 1.3em;
 }
 .your-adventure h3 {
     text-align:center;
@@ -813,7 +824,17 @@ hr {
 }
 
 .adventures a:hover {
-    color:rgba(9, 43, 181, 0.82);
-    border-bottom:1px solid #e31f72 ;
+    color:rgba(31, 64, 196, 0.82);
+    border-bottom:1px solid rgba(31, 64, 196, 0.82) ;
 
+}
+
+/* ===================== FOOTER ==================*/
+
+.social-media-menu ol, ul {
+    list-style: none;
+}
+
+.social-media-menu ul li a:hover{
+    border-bottom: 1px solid ;
 }
