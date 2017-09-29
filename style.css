@@ -308,8 +308,29 @@ li.individual-featured-work {
     margin: 0 2% 0 2%;
 }
 
-/* =============== CASE STUDIES PAGE ================ */
+/* =============== WORK / PORTFOLIO PAGE ================ */
 
+.work-intro {
+    margin: -11% 0 0 0;
+}
+.work-intro h1 {
+    font-family: 'Monoton';
+    text-align: center;
+    font-size: 5em;
+    color: #e31f72;
+    line-height: normal;
+    padding: 1% 0 0 0;
+}
+
+.work-intro h4 {
+    font-family: 'Lato';
+    font-size: 1.3em;
+    margin:-3% 0 0 0;
+    width:100%;
+    text-align: center;
+    color: #092bb5;
+    line-height: normal;
+}
 
 
 /* ============ CASE STUDIES - Individual Page =========== */
@@ -395,11 +416,11 @@ aside.case-study-sidebar p {
 
 .main-about-me {
     background:#e31f72;
-    padding:5% 0 7% 0;
+    padding:8% 0 10% 0;
 }
 .more-about  {
     width:100%;
-    margin: 0 0 10% 0;
+    margin: 0 0 9% 0;
     
 }
 
@@ -425,22 +446,25 @@ aside.case-study-sidebar p {
 }
 
 .our-services {
-    margin: 0 0 5% 0;
+    margin: 4% 0 0 0;
     background-color: #fff;
 }
 
 .our-services h3{
+
 }
+
 .our-services h4 {
     text-align: center;
     text-transform: uppercase;
-    font-size: 1em;
-    margin: 7% 0 1% 0;
+    font-size: 1.8em;
+    margin: 5% 0 1% 0;
 }
 .our-services p {
     text-align: center;
     font-size: 1.1em;
     margin: 0;
+    line-height: 1.8em;
 }
 
 .our-services h3{
@@ -451,7 +475,7 @@ aside.case-study-sidebar p {
 
 ul.services-featured {
     list-style-type: none;
-    margin: 8% 0 0 0;
+    margin: 10% 0 10% 0;
     padding: 0;
 }
 
@@ -468,7 +492,7 @@ figure {
 
 li.individual-featured-service {
     display: inline-block;
-    margin: 0 0 7% 0;
+    margin: 3% 0 7% 0;
 }
 
 
