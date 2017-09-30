@@ -23,6 +23,7 @@ get_header(); ?>
                 $image_1 = get_field('image_1');
                 $image_2 = get_field('image_2');
                 $image_3 = get_field('image_3');
+                $image_before = get_field('image_before');
             ?>
             
             <article class="case-study">   
@@ -44,6 +45,9 @@ get_header(); ?>
                     }?>
                     <?php if($image_3) {
                         echo wp_get_attachment_image( $image_3, $size ); 
+                    }?>
+                        <?php if($image_3) {
+                        echo wp_get_attachment_image( $image_before, $size ); 
                     }?>
                       
                     

@@ -275,10 +275,10 @@ li.get-to-know {
     text-transform: uppercase;
     margin: 0 0 7% 0;
         text-shadow:
-    -1px -1px 0 #888,
-    1px -1px 0 #888,
-    -1px 1px 0 #888,
-    1px 1px 0 #888;
+    -1px -1px 0 #666,
+    1px -1px 0 #666,
+    -1px 1px 0 #666,
+    1px 1px 0 #666;
 }
 .featured-work h3{
     margin: 10% 0 0 0;
@@ -347,7 +347,7 @@ aside.case-study-sidebar {
 }
 aside.case-study-sidebar h2{
     font-weight: bold;
-    color: #e31f72;
+    color: #666;
     
 }
 
@@ -426,13 +426,13 @@ aside.case-study-sidebar p {
 
 
 .more-about h3 {
-    width:100%;
+    width:80%;
     line-height: 1.8em;
     font-size: 1.2em;
     font-family: 'Lato';
     font-weight: 100;
     color:#fff;
-    margin: 0 0 7% 0;
+    margin: 0 10% 7% 10%;
 }
 
 
