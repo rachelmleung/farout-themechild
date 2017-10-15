@@ -188,7 +188,7 @@ transition: all 500ms ease;
 }
 
 .blog-post h4 {
-    font: 700 1em/1.75 'Montserrat', 'Lato', Arial, sans-serif;
+    font: 700 1em/1.75 'Open Sans', 'Lato', Arial, sans-serif;
     color: #a6a6a6;
     text-transform:uppercase;
     margin: 2em 0 .5em;
@@ -212,7 +212,7 @@ transition: all 500ms ease;
 
 .get-to-know h4 {
     font-family: 'lato';
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.8em;
     font-weight: 100;
     width:;
@@ -311,7 +311,7 @@ li.individual-featured-work {
 /* =============== WORK / PORTFOLIO PAGE ================ */
 
 .work-intro {
-    margin: -11% 0 0 0;
+    margin: -10% 0 -4% 0;
 }
 .work-intro h1 {
     font-family: 'Monoton';
@@ -361,6 +361,7 @@ aside.case-study-sidebar h4{
 
 aside.case-study-sidebar p {
     font-size: 1em;
+    margin: 0 0 10% 0;
     
 }
 
@@ -415,8 +416,13 @@ aside.case-study-sidebar p {
 }
 
 .main-about-me {
-    background:#e31f72;
-    padding:8% 0 10% 0;
+    width: 60%;
+    margin: 0 20% 0 20%;
+    background:#fff;
+    padding:8% 0 8% 0;
+    border-top: 3px solid #e31f72;
+    border-bottom: 3px solid #e31f72;
+
 }
 .more-about  {
     width:100%;
@@ -426,13 +432,13 @@ aside.case-study-sidebar p {
 
 
 .more-about h3 {
-    width:80%;
+    width:100%;
     line-height: 1.8em;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-family: 'Lato';
     font-weight: 100;
-    color:#fff;
-    margin: 0 10% 7% 10%;
+    color:#333;
+    margin: 0 0 8% 0;
 }
 
 
@@ -457,12 +463,13 @@ aside.case-study-sidebar p {
 .our-services h4 {
     text-align: center;
     text-transform: uppercase;
-    font-size: 1.8em;
-    margin: 5% 0 1% 0;
+    font-size: 2em;
+    margin: 5% 0 0 0;
 }
 .our-services p {
     text-align: center;
     font-size: 1.1em;
+    font-family: 'Lato';
     margin: 0;
     line-height: 1.8em;
 }
@@ -475,7 +482,7 @@ aside.case-study-sidebar p {
 
 ul.services-featured {
     list-style-type: none;
-    margin: 10% 0 10% 0;
+    margin: 5% 0 3% 0;
     padding: 0;
 }
 
@@ -504,9 +511,11 @@ li.individual-featured-service figure img {
 li.individual-featured-service figure h2 {
     width:65%;
     text-align: left;
-    font-family: 'Lato';
+    font-family: 'Open Sans';
     float:right;
-    margin:0;
+    word-spacing: 5px;
+    margin:0 0 2% 0;
+    color:#e31f72;
 }
 
 
@@ -566,7 +575,7 @@ hr {
     font-size: 1em;
     font-weight: 100;
     text-align: left;
-    margin:0 0 5% 0;
+    margin:0 0 7% 0;
 }
 
 .about a.button, a.button:link {
@@ -602,17 +611,39 @@ hr {
 
 
 /*==========BLOG ==============*/'
+.blog-intro {
+    margin: 0;
+}
+.blog-intro h1 {
+    font-family: 'Monoton';
+    text-align: center;
+    font-size: 5em;
+    color: #e31f72;
+    line-height: normal;
+    padding: 1% 0 0 0;
+}
+
+.blog-intro h4 {
+    font-family: 'Lato';
+    font-size: 1.3em;
+    margin:-3% 0 0 0;
+    width:100%;
+    text-align: center;
+    color: #092bb5;
+    line-height: normal;
+}
+
 
 .read-more-link {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    text-transform:uppercase;
+
     margin: 5% 0 0 0;
 }
 
 .read-more-link a {
     color:#092BB5;
     text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-weight: 700;
     
 
 }

@@ -20,6 +20,13 @@
 
 get_header(); ?>
 
+<div class="work-intro">
+
+<h1>Portfolio</h1>
+<h4>Check out some of my latest projects. </h4>
+</div>
+
+
 	<div id="primary" class="site-content">
 		<div class="main-content" role="main">
             <?php while ( have_posts() ) : the_post(); 

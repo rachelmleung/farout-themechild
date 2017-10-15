@@ -32,7 +32,7 @@ get_header(); ?>
         			<?php endwhile; // end of the loop. ?>
                 <div class="more-about">
                     <h3><?php echo $more_about; ?></h3>
-                    <center><a class="button" href="<?php echo site_url('/blog/') ?>">Keep Things Interesting</a></center>
+                    <center><a class="button" href="<?php echo site_url('/blog/') ?>">View My Blog</a></center>
                     
                 </div>
     </div>
@@ -137,7 +137,8 @@ get_header(); ?>
  <div class="site-content clearfix">
     <div class="about-cta"> 
         <h4> <?php echo $about_cta; ?></h4>  
-        <a class="button" href="<?php echo site_url('/case-studies/') ?>">View My Work</a>
+        <center>
+        <a class="button" href="<?php echo site_url('/case-studies/') ?>">View My Work</a></center>
  
     </div>
      

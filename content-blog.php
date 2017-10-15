@@ -11,7 +11,6 @@
 ?>
 
 
-
 <article id="post-<?php the_ID(); ?>" class="post-entry">
 	<div class="entry-wrap">
 		<header class="entry-header">
