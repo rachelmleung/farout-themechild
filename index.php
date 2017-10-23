@@ -17,10 +17,10 @@
 get_header(); ?>
 	<!-- BLOG PAGE -->
 
-<div class="blog-intro">
+<!--<div class="blog-intro">
 <h1>Blog</h1>
 <h4>See what I'm doing in my spare time </h4>
-</div>
+</div>-->
 
 	<section class="index-page">
 		<div class="site-content">
