@@ -212,11 +212,11 @@ transition: all 500ms ease;
 
 .get-to-know h4 {
     font-family: 'lato';
-    font-size: 1.1em;
+    font-size: .9em;
     line-height: 1.8em;
     font-weight: 100;
-    width:;
-    margin: 4% 0 15% 0;
+    width:96%;
+    margin: 4% 2% 15% 2%;
 }
 
 
@@ -452,6 +452,8 @@ li.individual-featured-service figure p {
     margin:0 2% 15% 2%;
     width:96%;
     text-align: left;
+    font-size:1em;
+    
 
 }
 
@@ -773,9 +775,54 @@ aside.case-study-sidebar p {
 transition: all 500ms ease;
 }
 
+/*========================== 404 Page =================*/
 
+.your-adventure{
+    width:100%;
+    margin:0;
+}
+.your-adventure h1 {
+    font-family: 'Monoton';
+    font-size: 2em;
+    color:#e31f72;
+    text-align:center;
+    line-height: 1.3em;
+}
+.your-adventure h3 {
+    text-align:center;
+    margin: 0 0 15% 0;
+    font-size:1em;
+}
 
+hr {
+    margin: 0 0 15% 0;
+}
 
+.adventures p {
+    font-style: italic;
+}
+
+.adventures a {
+    color:#092BB5;
+}
+
+.adventures a:hover {
+    color:rgba(31, 64, 196, 0.82);
+    border-bottom:1px solid rgba(31, 64, 196, 0.82) ;
+
+}
+
+/* ===================== FOOTER ==================*/
+
+.social-media-menu ol, ul {
+    list-style: none;
+}
+
+.social-media-menu ul li a:hover{
+    border-bottom: 1px solid ;
+}
+
+} /* end media desktop media query*/
 
 
 /* ================ TABLET TABLET TABLET =====================*/
@@ -848,6 +895,7 @@ transition: all 500ms ease;
     font-weight: 100;
     text-transform: uppercase;
     word-spacing: .3em;
+    font-size: 1.2em; 
 }
 
 
@@ -907,7 +955,7 @@ transition: all 500ms ease;
 
 .get-to-know h4 {
     font-family: 'lato';
-    font-size: 1.1em;
+    font-size: 1.2em;
     line-height: 1.8em;
     font-weight: 100;
     width:;
@@ -1000,78 +1048,8 @@ li.individual-featured-work {
     width:29%;
     margin: 0 2% 0 2%;
 }
-
-/* =============== WORK / PORTFOLIO PAGE ================ */
-
-.work-intro {
-    margin: -10% 0 -4% 0;
-}
-.work-intro h1 {
-    font-family: 'Monoton';
-    text-align: center;
-    font-size: 5em;
-    color: #e31f72;
-    line-height: normal;
-    padding: 1% 0 0 0;
-}
-
-.work-intro h4 {
-    font-family: 'Lato';
-    font-size: 1.3em;
-    margin:-3% 0 0 0;
-    width:100%;
-    text-align: center;
-    color: #092bb5;
-    line-height: normal;
-}
-
-
-/* ============ CASE STUDIES - Individual Page =========== */
-
-.case-study {
-    width:100%;
-    margin: 8% 0 0 0;
-}
-aside.case-study-sidebar {
-    width:33%;
-    float:left;
-    margin: 2% 7% 0 0;
     
-}
-aside.case-study-sidebar h2{
-    font-weight: bold;
-    color: #666;
-    
-}
-
-aside.case-study-sidebar h4{
-    font-weight:100;
-    font-size: .9em;
-    margin:0 0 3% 0;
-    color:#a6a6a6;
-    
-}
-
-aside.case-study-sidebar p {
-    font-size: 1em;
-    margin: 0 0 10% 0;
-    
-}
-
-.case-study-images {
-    float:left;
-    width:60%;
-    margin: 7% 0 7% 0;
-}
-
-.case-study-images img {
-    display:block;
-    border: 1px solid #838383;
-    margin: 0 0 10% 0;
-    width:100%;
-}
-
-/*=============== About Page =====================*/
+    /*=============== About Page =====================*/
 
 .about-page {
     margin: 0;
@@ -1207,7 +1185,7 @@ li.individual-featured-service figure h2 {
     font-family: 'Open Sans';
     float:right;
     word-spacing: 5px;
-    margin:0 0 2% 0;
+    margin:0 0 0 0;
     color:#e31f72;
 }
 
@@ -1265,7 +1243,7 @@ hr {
 
 .about-cta h4 {
     text-transform: none;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 100;
     text-align: left;
     margin:0 0 7% 0;
@@ -1301,6 +1279,78 @@ hr {
     background: rgba(69, 172, 157, 0.77) !important;
     border: 0;
 }*/
+
+
+/* =============== WORK / PORTFOLIO PAGE ================ */
+
+.work-intro {
+    margin: -10% 0 -4% 0;
+}
+.work-intro h1 {
+    font-family: 'Monoton';
+    text-align: center;
+    font-size: 5em;
+    color: #e31f72;
+    line-height: normal;
+    padding: 1% 0 0 0;
+}
+
+.work-intro h4 {
+    font-family: 'Lato';
+    font-size: 1.3em;
+    margin:-3% 0 0 0;
+    width:100%;
+    text-align: center;
+    color: #092bb5;
+    line-height: normal;
+}
+
+
+/* ============ CASE STUDIES - Individual Page =========== */
+
+.case-study {
+    width:100%;
+    margin: 8% 0 0 0;
+}
+aside.case-study-sidebar {
+    width:33%;
+    float:left;
+    margin: 2% 7% 0 0;
+    
+}
+aside.case-study-sidebar h2{
+    font-weight: bold;
+    color: #666;
+    
+}
+
+aside.case-study-sidebar h4{
+    font-weight:100;
+    font-size: .9em;
+    margin:0 0 3% 0;
+    color:#a6a6a6;
+    
+}
+
+aside.case-study-sidebar p {
+    font-size: 1em;
+    margin: 0 0 10% 0;
+    
+}
+
+.case-study-images {
+    float:left;
+    width:60%;
+    margin: 7% 0 7% 0;
+}
+
+.case-study-images img {
+    display:block;
+    border: 1px solid #838383;
+    margin: 0 0 10% 0;
+    width:100%;
+}
+
 
 
 /*==========BLOG ==============*/'
