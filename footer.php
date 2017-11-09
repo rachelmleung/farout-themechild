@@ -15,8 +15,7 @@
 		<footer id="colophon" class="site-footer clearfix" role="contentinfo">
 			<div class="site-info">
 				<div class="site-description">
-					<p><?php bloginfo('description'); ?></p>
-					<p>&copy; <?php bloginfo('title'); ?>, LLC
+					<p>&copy; <?php bloginfo('title'); ?>
 				</div>
 
 				<nav class="social-media-navigation" role="navigation">
