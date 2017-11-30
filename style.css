@@ -266,6 +266,7 @@ li.get-to-know {
 }
 
 
+    /* ============= MOBILE ============*/ 
 /* ============= HOME - Featured Work ============*/ 
 .featured-work .site-content {
     display:block;
@@ -318,6 +319,7 @@ li.individual-featured-work {
     margin: 0 2% 0 2%;
 }
 
+/*=============== MOBILE =====================*/
 /*=============== About Page =====================*/
 
 .about-page {
@@ -524,6 +526,7 @@ hr {
     margin-top: 15%;
 }
 
+/* =============== MOBILE ================ */
 /* =============== WORK / PORTFOLIO PAGE ================ */
 
 .work-intro {
@@ -550,6 +553,7 @@ hr {
 }
 
 
+        /* ============ MOBILE =========== */
 /* ============ CASE STUDIES - Individual Page =========== */
 
 .case-study {
@@ -594,7 +598,8 @@ aside.case-study-sidebar p {
     width:100%;
 }
 
-/*==========BLOG ==============*/'
+/*==========MOBILE ==============*/
+/*==========BLOG ==============*/
 .blog-intro {
     margin: 0 0 0 0;
 }
@@ -668,6 +673,7 @@ aside.case-study-sidebar p {
 
 
 
+/*============== MOBILE =======*/
 /*============== BLOG SIDEBAR =======*/
 #sidebar {
     display: block;
@@ -700,6 +706,7 @@ aside.case-study-sidebar p {
     vertical-align: middle;
 }
 
+/*=============== MOBILE =====================*/
 /*=============== Contact Us =====================*/
 
 /* Created custom body class using the solution by Sam Kent below */ 
@@ -787,6 +794,7 @@ aside.case-study-sidebar p {
 transition: all 500ms ease;
 }
 
+/*========================== MOBILE =================*/
 /*========================== 404 Page =================*/
 
 .your-adventure{
@@ -824,6 +832,7 @@ hr {
 
 }
 
+/* ===================== MOBILE ==================*/
 /* ===================== FOOTER ==================*/
 
 .social-media-menu ol, ul {
@@ -834,19 +843,588 @@ hr {
     border-bottom: 1px solid ;
 }
 
-} /* end media desktop media query*/
 
 
 /* ================ TABLET TABLET TABLET =====================*/
 /* ================ TABLET TABLET TABLET =====================*/
 /* ================ TABLET TABLET TABLET =====================*/
-@media (min-width: 768px){ 
+
+@media (min-width: 767px){
+    
+.home-intro h1 {
+    color:#e31f72;
+    font-family: 'Monoton';
+    font-size: ;
+    line-height: 1em;
+    margin: -10% 0 0 0;
+    
+}
+
+
+.home-intro h3 {
+    font-family: 'Lato';
+    font-size: ; /* play with font size, not important line so compromise*/
+    margin: 0 0 25% 0;
+    padding: 2% 0 2% 0;
+    text-transform: uppercase;
+    word-spacing: .3em;
+    font-size:1em ;
 
 }
 
+.home-intro h2 {
+    /* NEED TO FIX FONT*/
+    margin: 15% 0 5% 0;
+    font-family: 'Lato';
+    font-weight: 100;
+    text-transform: uppercase;
+    word-spacing: .3em;
+    font-size:1.1em ;
+}
+
+
+.hero-content h3{
+    color:#333;
+}
+
+
+
+
+    /* ============= TABLET ============*/ 
+/* ============= HOME - Featured Work ============*/ 
+.featured-work .site-content {
+    display:block;
+
+}
+
+.featured-work {
+    margin: 0 0 5% 0;
+    padding: 7% 0 8% 0;
+    background: #f5f5f5;
+    
+
+}
+
+.featured-work h4 {
+    text-align: center;
+    font-size: 1.4em;
+    color:#333;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 5% 0 5% 0;
+
+}
+.featured-work h3{
+    margin: 5% 0 20% 0;
+    font-size: 1em;
+    text-align: center;
+    color:#333;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+
+
+}
+
+ul.homepage-featured {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.homepage-featured {
+    width:100%;
+    
+}
+
+li.individual-featured-work {
+    /*display: inline-block;*/
+    float:left;
+    width:29%;
+    margin: 0 2% 0 2%;
+}
+
+.home-bottom {
+    margin: 0 0 5% 0;
+}
+.get-to-know {
+
+}
+
+
+.get-to-know h4 {
+    font-family: 'lato';
+    font-size: .9em;
+    line-height: 1.8em;
+    font-weight: 100;
+    width:100%;
+    margin: 4% 0% 7% 0%;
+}
+
+
+
+/*ul.get-to-know {
+    list-style:none;
+    padding-left:0;
+    width:90%;
+    margin: 0 10% 0 0;
+
+}
+
+li.get-to-know {
+}
+*/
+
+
+.home-about {
+    width:55%;
+    float:left;
+    margin: 0;
+}
+.home-about h4 {
+    font: 1.2em 'Lato', Arial, sans-serif;
+    color: #a6a6a6;
+    line-height: 1.8em;
+    margin:0 0 10% 0;
+}
+
+.home-about a.button {
+}
+
+.widget-title {
+    display: ;
+}
+
+    /*=============== TABLET =====================*/
+/*=============== About Page =====================*/
+
+.about-page {
+    margin: 0;
+    width:100%;
+}
+
+
+.about-page p {
+    color:#0931B7;
+    margin:;
+    width:100%;
+    font-size:;
+    padding: 5% 0 7% 0;
+    text-align: center;
+
+}
+
+.about-intro {
+    margin: 0 0 7% 0;
+}
+.about-intro h1 {
+    font-family: 'Monoton';
+    text-align: center;
+    font-size: 3em;
+    color: #e31f72;
+    line-height: normal;
+}
+
+.about-intro h4 {
+    font-family: 'Lato';
+    font-size: 1em;
+    margin:0 20% 0 20%;
+    width:60%;
+    text-align: center;
+    color: #092bb5;
+}
+
+.main-about-me {
+    margin:0 4% 0 4%;
+    width:92%;
+    background:#fff;
+    padding:8% 0 8% 0;
+    border-top: 3px solid #e31f72;
+    border-bottom: 3px solid #e31f72;
+
+}
+.more-about  {
+    width:100%;
+    margin: 0 0 9% 0;
+    
+}
+
+
+.more-about h3 {
+    width:100%;
+    line-height: 1.8em;
+    font-size: .9em;
+    font-family: 'Lato';
+    font-weight: 100;
+    color:#333;
+    margin: 0 0 15% 0;
+}
+
+
+.more-about a.button:link {
+    margin: 0 0 0 0;
+}
+
+.our-services .site-content {
+    display:block;
+
+}
+
+.our-services {
+    margin: 4% 0 0 0;
+    background-color: #fff;
+}
+
+.our-services h3{
+
+}
+
+.our-services h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    margin: 15% 0 0 0;
+}
+.our-services p {
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Lato';
+    margin: 0;
+    line-height: 1.8em;
+}
+
+.our-services h3{
+    margin: 2% 0 0 0;
+    font-size: .9em;
+    text-align: center;
+}
+
+ul.services-featured {
+    list-style-type: none;
+    margin: 5% 0 3% 0;
+    padding: 0;
+}
+
+.services-featured {
+    width:100%;
+    
+}
+
+
+figure {
+    padding: 0;
+    margin: 0;
+}
+
+li.individual-featured-service {
+    display: inline-block;
+    margin: 3% 0 0% 0;
+}
+
+/* 1st and 3rd - Odd stylings*/
+li.individual-featured-service figure img {
+    display: block;
+    margin: auto;
+    padding: 0 0 10% 0;
+}
+
+li.individual-featured-service figure h2 {
+    margin:0 10% 0 10%;
+    width:80%;
+    font-family: 'Open Sans';
+    word-spacing: 5px;
+    color:#e31f72;
+}
+
+
+li.individual-featured-service figure p {
+    margin:0 10% 15% 10%;
+    width:80%;
+    text-align: left;
+    font-size:1em;
+    
+
+}
+
+/* 2nd and 4th - Even stylings*/
+
+/*li.individual-featured-service:nth-child(even) figure img {
+    float:right;
+}
+
+li.individual-featured-service:nth-child(even) figure h2 {
+    float:right;
+    margin: 0 12% 0 0;
+}
+
+li.individual-featured-service:nth-child(even) p {
+
+    margin: 0 12% 0 0;
+}
+
+*/
+
+
+.about-contact {
+    margin: 0;
+    text-align: center;
+}
+
+hr {
+    margin: 3% 0 0 0;
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #BFBFBF; /* old IE */
+    background-color: #BFBFBF; /* Modern Browsers */
+
+}
+
+.about-bottom {
+    margin:0 0 5% 0;
+}
+
+.about-cta hr {
+
+}
+
+.about-cta h4 {
+    text-transform: none;
+    font-size: 1em;
+    font-weight: 100;
+    text-align: left;
+    margin: 0 10% 5% 10%;
+    width: 80%;
+}
+
+.about a.button, a.button:link {
+    background: none repeat scroll 0 0 #092BB5;
+    margin-top: 15%;
+}
+
+        /* =============== TABLET ================ */
+/* =============== WORK / PORTFOLIO PAGE ================ */
+
+.work-intro {
+    margin: -10% 0 -4% 0;
+}
+.work-intro h1 {
+    font-family: 'Monoton';
+    text-align: center;
+    font-size: 3em;
+    color: #e31f72;
+    line-height: normal;
+    padding: 1% 0 0 0;
+}
+
+.work-intro h4 {
+    font-family: 'Lato';
+    font-size: 1em;
+    margin:-3% 20% 0 20%;
+    width:60%;
+    text-align: center;
+    color: #092bb5;
+    line-height: normal;
+}
+
+    /* ============ TABLET =========== */
+/* ============ CASE STUDIES - Individual Page =========== */
+
+.case-study {
+    width:100%;
+    margin: 0 0 0 0;
+}
+aside.case-study-sidebar {
+    width:100%;
+    float:left;
+    margin: 0 7% 0 0;
+    
+}
+aside.case-study-sidebar h2{
+    font-weight: bold;
+    color: #666;
+    
+}
+
+aside.case-study-sidebar h4{
+    font-weight:100;
+    font-size: .9em;
+    margin:0 0 3% 0;
+    color:#a6a6a6;
+    
+}
+
+aside.case-study-sidebar p {
+    font-size: 1em;
+    margin: 0 0 0% 0;
+    
+}
+
+.case-study-images {
+    float:left;
+    width:80%;
+    margin: 7% 10% 0% 10%;
+}
+
+.case-study-images img {
+    display:block;
+    border: 1px solid #838383;
+    margin: 0 0 0 0;
+    width:100%;
+}
+
+/*==========TABLET ==============*/
+/*==========BLOG ==============*/
+.blog-intro {
+    margin: 0 0 0 0;
+}
+.blog-intro h1 {
+    font-family: 'Monoton';
+    text-align: center;
+    font-size: 3.8em;
+    color: #e31f72;
+    line-height: normal;
+    padding: 1% 0 0 0;
+}
+
+.blog-intro h4 {
+    font-family: 'Lato';
+    font-size: 1.3em;
+    margin:-3% 0 0 0;
+    width:100%;
+    text-align: center;
+    color: #092bb5;
+    line-height: normal;
+}
+
+
+.read-more-link {
+
+    margin: 5% 0 0 0;
+}
+
+.read-more-link a {
+    color:#092BB5;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    
+    
+
+}
+.read-more-link a:hover {
+    color: rgba(31, 64, 196, 0.82);
+    border-bottom: 1px solid; 
+    
+    -webkit-transition: all 500ms ease; /* slows down hover effect*/
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;    
+
+} 
+
+
+.entry-title a {
+    color: #a6a6a6;
+    font-size: .8em;
+}
+
+.entry-title a:hover {
+    color: #a6a6a6;
+}
+
+.entry-time {
+    display:none;
+}
+
+.entry-footer .entry-terms a:hover {
+    border-bottom: 1px solid #092BB5;
+}
+
+.post-entry {
+    border-bottom: none;
+    padding-bottom: 1.875em;
+    margin-bottom: 1.875em;
+}
+
+.entry-summary p {    
+    font-size: .9em;
+}
+
+
+
+/*============== TABLET =======*/
+/*============== BLOG SIDEBAR =======*/
+#sidebar {
+    display: block;
+    width: 100%;
+    min-width: 15em;
+    border-left:;
+    margin-left:;
+}
+
+#sidebar h2 {
+    color:#e31f72;
+}
+
+#sidebar .widget_search {
+    border-bottom: none;
+}
+
+#sidebar .widget_search input[type="submit"] {
+    width: 15%;
+    border-top: 1px solid #a6a6a6;
+    border-bottom: 1px solid #a6a6a6; 
+    border-right: 1px solid #a6a6a6;
+    border-left: none;
+    font: .875em/1.75em 'Open Sans', Arial, sans-serif;
+    height: 2.6rem;
+    background: url('img/white-arrow-right.png') no-repeat center #092bb5;
+    color: #ffffff;
+    margin-left: -5px;
+    padding: 0;
+    vertical-align: middle;
+}
+/*=================== TABLET =======================*/
+/*====================CONTACT PAGE======================*/
+
+.contact-intro h1 {
+    font-family: 'Monoton';
+    text-align: center;
+    font-size: 3em;
+    color: #e31f72;
+    line-height: normal;
+
+}
+
+.contact-intro h4 {
+    font-family: 'Lato';
+    font-size: 1em;
+    margin:0 20% 10% 20%;
+    width:60%;
+    text-align: center;
+    color: #092bb5;
+}
+
+.contact-name {
+    width:48%;
+    float:left;
+    margin: 0 2% 0 0;
+}
+
+.contact-email {
+    width:48%;
+    display: inline-block;
+    margin: 0 0 0 2%;
+}
+
+}  /* end media tablet media query*/
+
+
 /* ================ DESKTOP DESKTOP DESKTOP =====================*/
 /* ================ DESKTOP DESKTOP DESKTOP =====================*/
 /* ================ DESKTOP DESKTOP DESKTOP =====================*/
+
 @media (min-width: 940px){
     
 .home-page {
@@ -981,9 +1559,7 @@ transition: all 500ms ease;
     padding-left:0;
     width:90%;
     margin: 0 10% 0 0;
-
 }
-
 li.get-to-know {
 }
 */
@@ -1267,14 +1843,11 @@ hr {
 }
 
 /*
-
 .about-contact h2 {
     text-align: center;
     display: inline-block;
     margin: 10% 0 0 0;
-
 }
-
 .about-contact button {
     margin: 0 0 0 5%;
     background-color:#45AC9D;
@@ -1284,9 +1857,7 @@ hr {
     font-family: 'Lato';
     font-size: 1em;
     border-style: none;
-
 }
-
 .about-contact button:hover {
     background: rgba(69, 172, 157, 0.77) !important;
     border: 0;
@@ -1577,15 +2148,19 @@ aside.case-study-sidebar p {
     font-size: .9em;
 }
     
+
 .contact-name {
     width:48%;
-    display: inline-block;
+    float:left;
+    margin: 0 2% 0 0;
 }
 
 .contact-email {
     width:48%;
-    float:right;
+    display: inline-block;
+    margin: 0 0 0 2%;
 }
+
 
 .contact-submit{
     float:right;
