@@ -28,9 +28,23 @@ get_header(); ?>
          <?php while ( have_posts() ) : the_post(); 
 
                 $more_about = get_field('more_about');
+
+                $services = get_field('our_services');
+                $services_intro = get_field('services_intro');
+                $about_image_1 = get_field('about_image_1');
+                $service_1 = get_field('service_1');
+                $about_image_2 = get_field('about_image_2');
+                $service_2 = get_field('service_2');
+                $service_3 = get_field('service_3');
+                $size = 'medium';
             ?>
         			<?php endwhile; // end of the loop. ?>
                 <div class="more-about">
+                    
+                <figure>
+                    <?php echo wp_get_attachment_image($about_image_1, $size); ?>
+                </figure>
+                
                     <h3><?php echo $more_about; ?></h3>
                     <center><a class="button" href="<?php echo site_url('/blog/') ?>">View My Blog</a></center>
                     
@@ -45,23 +59,15 @@ get_header(); ?>
     <div class="site-content clearfix">
          <?php while ( have_posts() ) : the_post(); 
 
-                $services = get_field('our_services');
-                $services_intro = get_field('services_intro');
-                $service_image_1 = get_field('service_image_1');
-                $service_1 = get_field('service_1');
-                $service_image_2 = get_field('service_image_2');
-                $service_2 = get_field('service_2');
-                $service_image_3 = get_field('service_image_3');
-                $service_3 = get_field('service_3');
-                $service_image_4 = get_field('service_image_4');
-                $service_4 = get_field('service_4');
-                $size = 'medium';
             
                 $service_1_title = get_field('service_1_title');
                 $service_2_title = get_field('service_2_title');
                 $service_3_title = get_field('service_3_title');
                 $service_4_title = get_field('service_4_title');
                 $about_cta = get_field('about_cta');
+                $experience_title = get_field('experience_title');
+                $experience_body = get_field('experience_body');
+    
     
             ?>
 
@@ -74,7 +80,7 @@ get_header(); ?>
             <li class="individual-featured-service">
 
                  <figure>
-                    <?php echo wp_get_attachment_image($service_image_1, $size); ?>
+                    <?php /* echo wp_get_attachment_image($about_image_1, $size); */?>
                      <h2><?php echo $service_1_title; ?></h2>
                     <p><?php echo $service_1; ?></p>
                 </figure>
@@ -85,7 +91,7 @@ get_header(); ?>
             <li class="individual-featured-service">
 
                     <figure>
-                        <?php echo wp_get_attachment_image($service_image_2, $size); ?>
+                        <?php /*echo wp_get_attachment_image($about_image_2, $size);*/ ?>
                          <div class="service-text">
                             <h2><?php echo $service_2_title; ?></h2>
                             <p><?php echo $service_2; ?></p>
@@ -99,7 +105,7 @@ get_header(); ?>
             <li class="individual-featured-service">
 
                  <figure>
-                    <?php echo wp_get_attachment_image($service_image_3, $size); ?>
+                    <?php /* echo wp_get_attachment_image($service_image_3, $size);*/ ?>
                      <h2><?php echo $service_3_title; ?></h2>                   
                     <p><?php echo $service_3; ?></p>
                 </figure>
@@ -107,17 +113,6 @@ get_header(); ?>
 
             <!--   <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>-->
              </li>               
-            <li class="individual-featured-service">
-
-                 <figure>
-                    <?php echo wp_get_attachment_image($service_image_4, $size); ?>
-                     <h2><?php echo $service_4_title; ?></h2>                  
-                    <p><?php echo $service_4; ?></p>
-                </figure>
-                
-
-            <!--   <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>-->
-             </li>           
             
             
             <?php endwhile; ?> 
@@ -135,10 +130,23 @@ get_header(); ?>
     
 <section class="about-bottom">
  <div class="site-content clearfix">
+                <div class="about-experience">
+                    
+                <figure>
+                    <?php echo wp_get_attachment_image($about_image_2, $size); ?>
+                </figure>
+                
+                    <h3><?php echo $experience_title; ?></h3>
+                    <p><?php echo $experience_body; ?></p>
+                    
+                </div>
+
     <div class="about-cta"> 
         <h4> <?php echo $about_cta; ?></h4>  
-        <center>
-        <a class="button" href="<?php echo site_url('/case-studies/') ?>">View My Work</a></center>
+        <div class="about-cta-buttons">
+        <a class="button" href="<?php echo site_url('/case-studies/') ?>">Work Projects</a>
+        <a class="button" href="<?php echo site_url('/blog/') ?>">Fun Projects</a>
+        </div>
  
     </div>
      

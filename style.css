@@ -116,27 +116,46 @@ a.responsive-menu-item-link
     border-bottom: 1px solid #fff;
 }
 
-.home-page {
-    background: #fff;
+body.home.page-id-8 {
+    background-color: #fff;
+    background-image: url('https://image.ibb.co/gVs9QV/Galaxy-cloud-bg-v2.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center; 
+    opacity: 1;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
 
+}
+.home-page {
+    background:none;
+    
 }
 
 #masthead {
-  background: none repeat scroll 0 0 #fff;
+  background: none repeat scroll 0 0 transparent;
 }
 
 #masthead .title {
-    color:#a6a6a6;
+    color:#000;
+    text-shadow: 2px 2px 1px #a6a6a6;
+    display:none;
 }
 
+#masthead .nav-menu {
+    display:none;
+}
 #masthead a {
-    color: #a6a6a6;
+    color: #000;
     font-weight: bold;
+    text-shadow: 1px 1px 1px #fff;
+    
 }
 
 
 #masthead a:hover {
-  color: #092bb5;
+    color: #a6a6a6;
 
     -webkit-transition: all 500ms ease; /* slows down hover effect*/
     -moz-transition: all 500ms ease;
@@ -154,35 +173,42 @@ transition: all 500ms ease;
 .home-intro
 {
     width:100%;
+    margin:-35% 0 0 0;
 }
 .home-intro h1 {
-    color:#e31f72;
-    font-family: 'Monoton';
-    font-size: ;
+    color:#9999ff;
+    font-family: 'Monoton', sans-serif;
+    text-transform: uppercase;
+    opacity:.;
+    font-size: 1.9em;
     line-height: 1em;
-    margin: -10% 0 0 0;
+    margin:  0;
+    text-shadow: 8px 8px 4px #000;
+    
     
 }
 
 
 .home-intro h3 {
     font-family: 'Lato';
+    color:#ffffff;
     font-size: ; /* play with font size, not important line so compromise*/
-    margin: 0 0 25% 0;
-    text-transform: uppercase;
+    margin: 3% 0 35% 0;
+    text-transform:;
     word-spacing: .3em;
-    font-size:.7em ;
+    font-size:1em ;
 
 }
 
 .home-intro h2 {
     /* NEED TO FIX FONT*/
+    color:#ffffff;
     margin: 15% 0 15% 0;
     font-family: 'Lato';
     font-weight: 100;
-    text-transform: uppercase;
+    text-transform: ;
     word-spacing: .3em;
-    font-size:.7em ;
+    font-size:.9em ;
 }
 
 
@@ -191,59 +217,52 @@ button.addtoany_content_bottom {
 }
 
 a.button, a.button:link{
-	background: #092bb5;
+	background: #333399;
  box-shadow: 0 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
 }
 
 a.button:link:hover{
-	background: rgba(31, 64, 196, 0.82);
+	background: #6699ff;
     
         -webkit-transition: all 500ms ease; /* slows down hover effect*/
     -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
 transition: all 500ms ease;
+}
+
+
+
+.button-transparent
+{
+    display: flex;
+    flex-direction: column;
+}
+a.button-transparent, a.button-transparent:link{
+	background: white;
+    box-shadow: 0 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: 2px solid #333;
+    padding: 1% 5% 1% 5%;
+    width:60%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 400;
+
+}
+
+a.button-transparent:link:hover{
+	background: #6699ff;
     
-    
-
-}
-.hero-content h3{
-    color:#333;
-}
-
-
-
-.home-bottom {
-    margin: 0 0 5% 0;
-}
-.get-to-know {
-
-}
-
-
-.get-to-know h4 {
-    font-family: 'lato';
-    font-size: .9em;
-    line-height: 1.8em;
-    font-weight: 100;
-    width:96%;
-    margin: 4% 2% 15% 2%;
+        -webkit-transition: all 500ms ease; /* slows down hover effect*/
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+transition: all 500ms ease;
 }
 
 
 
-/*ul.get-to-know {
-    list-style:none;
-    padding-left:0;
-    width:90%;
-    margin: 0 10% 0 0;
-
-}
-
-li.get-to-know {
-}
-*/
 
 
 .home-about {
@@ -266,6 +285,92 @@ li.get-to-know {
 }
 
 
+
+
+/* SLIDESHOW TESTIMONIALS - TEMPORARY LOCATION FOR CSS*/
+
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    margin: 0 auto;
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 10% 20% 10% 20%;
+  text-align: center;
+}
+
+.mySlides q {
+font-size: .9em;    
+}
+.mySlides p {
+font-size: .7em;    
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -15%;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+/**/
     /* ============= MOBILE ============*/ 
 /* ============= HOME - Featured Work ============*/ 
 .featured-work .site-content {
@@ -276,11 +381,11 @@ li.get-to-know {
 .featured-work {
     margin: 0 0 5% 0;
     padding: 7% 0 8% 0;
-    background: #f5f5f5;
+    background: none;
     
 
 }
-
+/*
 .featured-work h4 {
     text-align: center;
     font-size: 1.4em;
@@ -294,7 +399,6 @@ li.get-to-know {
     margin: 5% 0 20% 0;
     font-size: 1em;
     text-align: center;
-    color:#333;
     text-transform: uppercase;
     font-family: 'Open Sans';
 
@@ -314,10 +418,76 @@ ul.homepage-featured {
 
 li.individual-featured-work {
     /*display: inline-block;*/
-    float:left;
+  /*  float:left;
     width:96%;
     margin: 0 2% 0 2%;
+}*/
+
+
+.home-cta-buttons {
+    display:flex;  
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
+
+.work-cta-container {
+
+    background:none;
+    padding:2% 0 8% 0;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+    
+}
+.blog-cta-container {
+    align-content: center;
+    justify-content: center;
+    padding:8% 0 8% 0;
+    background:none;
+}
+
+.blog-cta-container img{
+    width:70%;
+    margin: 0 15% 10% 15%;
+}
+
+
+.home-bottom {
+    margin: 0 0 5% 0;
+    background:#fff;
+}
+
+/*
+.get-to-know {
+
+}
+
+
+.get-to-know h4 {
+    font-family: 'lato';
+    font-size: .9em;
+    line-height: 1.8em;
+    font-weight: 100;
+    width:96%;
+    margin: 4% 2% 15% 2%;
+}
+
+*/
+
+/*ul.get-to-know {
+    list-style:none;
+    padding-left:0;
+    width:90%;
+    margin: 0 10% 0 0;
+
+}
+
+li.get-to-know {
+}
+*/
+
+
 
 /*=============== MOBILE =====================*/
 /*=============== About Page =====================*/
@@ -345,7 +515,7 @@ li.individual-featured-work {
     font-family: 'Monoton';
     text-align: center;
     font-size: 2em;
-    color: #e31f72;
+    color: #092BB5;
     line-height: normal;
 }
 
@@ -355,7 +525,7 @@ li.individual-featured-work {
     margin:0 4% 0 4%;
     width:92%;
     text-align: center;
-    color: #092bb5;
+    color: #333399;
 }
 
 .main-about-me {
@@ -363,8 +533,8 @@ li.individual-featured-work {
     width:92%;
     background:#fff;
     padding:8% 0 8% 0;
-    border-top: 3px solid #e31f72;
-    border-bottom: 3px solid #e31f72;
+    border-top: 3px solid #cccccc;
+    border-bottom: 3px solid #cccccc;
 
 }
 .more-about  {
@@ -422,7 +592,7 @@ li.individual-featured-work {
     font-size: 1em;
     text-align: center;
 }
-
+/*
 ul.services-featured {
     list-style-type: none;
     margin: 5% 0 3% 0;
@@ -447,7 +617,7 @@ li.individual-featured-service {
 
 
 /* 1st and 3rd - Odd stylings*/
-li.individual-featured-service figure img {
+/*li.individual-featured-service figure img {
     display: block;
     margin: auto;
     padding: 0 0 10% 0;
@@ -490,6 +660,11 @@ li.individual-featured-service:nth-child(even) p {
 */
 
 
+section.featured-work {
+    display: flex;
+    background: white;
+    padding: 15% 0 0 0;
+}
 .about-contact {
     margin: 0;
     text-align: center;
@@ -851,24 +1026,26 @@ hr {
 
 @media (min-width: 767px){
     
+#masthead .nav-menu {
+    display:inline-flex;
+    justify-content: flex-end;
+}
+    
+    
 .home-intro h1 {
-    color:#e31f72;
-    font-family: 'Monoton';
-    font-size: ;
-    line-height: 1em;
-    margin: -10% 0 0 0;
+    font-size:3.4em ;
+    line-height: 1.8em;
+    margin: 25% 0 0 0;
     
 }
 
 
 .home-intro h3 {
-    font-family: 'Lato';
     font-size: ; /* play with font size, not important line so compromise*/
-    margin: 0 0 25% 0;
+    margin: 0 0  0;
     padding: 2% 0 2% 0;
-    text-transform: uppercase;
     word-spacing: .3em;
-    font-size:1em ;
+    font-size:1.2em ;
 
 }
 
@@ -877,15 +1054,10 @@ hr {
     margin: 15% 0 5% 0;
     font-family: 'Lato';
     font-weight: 100;
-    text-transform: uppercase;
     word-spacing: .3em;
-    font-size:1.1em ;
+    font-size:1.2em ;
 }
 
-
-.hero-content h3{
-    color:#333;
-}
 
 
 
@@ -900,7 +1072,6 @@ hr {
 .featured-work {
     margin: 0 0 5% 0;
     padding: 7% 0 8% 0;
-    background: #f5f5f5;
     
 
 }
@@ -953,7 +1124,7 @@ li.individual-featured-work {
 
 .get-to-know h4 {
     font-family: 'lato';
-    font-size: .9em;
+    font-size: 1em;
     line-height: 1.8em;
     font-weight: 100;
     width:100%;
@@ -1030,7 +1201,6 @@ li.get-to-know {
     margin:0 20% 0 20%;
     width:60%;
     text-align: center;
-    color: #092bb5;
 }
 
 .main-about-me {
@@ -1038,8 +1208,6 @@ li.get-to-know {
     width:92%;
     background:#fff;
     padding:8% 0 8% 0;
-    border-top: 3px solid #e31f72;
-    border-bottom: 3px solid #e31f72;
 
 }
 .more-about  {
@@ -1052,7 +1220,7 @@ li.get-to-know {
 .more-about h3 {
     width:100%;
     line-height: 1.8em;
-    font-size: .9em;
+    font-size: 1em;
     font-family: 'Lato';
     font-weight: 100;
     color:#333;
@@ -1426,54 +1594,27 @@ aside.case-study-sidebar p {
 /* ================ DESKTOP DESKTOP DESKTOP =====================*/
 
 @media (min-width: 940px){
-    
-.home-page {
-    background: #fff;
 
-}
-
-#masthead {
-  background: none repeat scroll 0 0 #fff;
-}
-
-#masthead .title {
-    color:#a6a6a6;
-}
-
-#masthead a {
-    color: #a6a6a6;
-    font-weight: bold;
-}
-
-
-#masthead a:hover {
-  color: #092bb5;
-
-    -webkit-transition: all 500ms ease; /* slows down hover effect*/
-    -moz-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-transition: all 500ms ease;
-    
-}
 
 .hero-content {
     margin:0;
 }
  
+.home-intro {
+    margin: 0 0 0 0;
+    }
+    
 .home-intro h1 {
-    color:#e31f72;
-    font-family: 'Monoton';
-    font-size: 5em;
+    font-size: 4em;
     line-height: 1em;
+    padding: 0 0 0 0;
 }
 
 
 .home-intro h3 {
-    font-family: 'Lato';
-    font-size: 1em; /* play with font size, not important line so compromise*/
-    margin: 1% 0 0 0;
-    text-transform: uppercase;
+    font-size: 1.2em; /* play with font size, not important line so compromise*/
+    margin: 0 0 0 0;
+   /* text-transform: uppercase;*/
     word-spacing: .3em;
 
 }
@@ -1483,7 +1624,7 @@ transition: all 500ms ease;
     margin: 10% 0 3% 0;
     font-family: 'Lato';
     font-weight: 100;
-    text-transform: uppercase;
+   /* text-transform: uppercase; */
     word-spacing: .3em;
     font-size: 1.2em; 
 }
@@ -1494,13 +1635,12 @@ button.addtoany_content_bottom {
 }
 
 a.button, a.button:link{
-	background: #092bb5;
  box-shadow: 0 8px 16px 0 rgba(5, 5, 5, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
 }
 
 a.button:link:hover{
-	background: rgba(31, 64, 196, 0.82);
+	background: #6699ff !important;
     
         -webkit-transition: all 500ms ease; /* slows down hover effect*/
     -moz-transition: all 500ms ease;
@@ -1511,9 +1651,7 @@ transition: all 500ms ease;
     
 
 }
-.hero-content h3{
-    color:#333;
-}
+
 .blog-post{
     width:50%;
     float:left;
@@ -1584,7 +1722,7 @@ li.get-to-know {
     display: ;
 }
 
-
+/*====================DESKTOP =====================*/
 /* ============= HOME - Featured Work ============*/ 
 .featured-work .site-content {
     display:block;
@@ -1594,8 +1732,6 @@ li.get-to-know {
 .featured-work {
     margin: 0 0 5% 0;
     padding: 7% 0 8% 0;
-    background: #f5f5f5;
-    
 
 }
 
@@ -1637,6 +1773,7 @@ li.individual-featured-work {
     margin: 0 2% 0 2%;
 }
     
+/*====================DESKTOP =====================*/
     /*=============== About Page =====================*/
 
 .about-page {
@@ -1661,8 +1798,8 @@ li.individual-featured-work {
     font-family: 'Monoton';
     text-align: center;
     font-size: 5em;
-    color: #e31f72;
     line-height: normal;
+
 }
 
 .about-intro h4 {
@@ -1671,7 +1808,7 @@ li.individual-featured-work {
     margin:auto;
     width:40%;
     text-align: center;
-    color: #092bb5;
+    color:#333399;
 }
 
 .main-about-me {
@@ -1679,8 +1816,9 @@ li.individual-featured-work {
     margin: 0 20% 0 20%;
     background:#fff;
     padding:8% 0 8% 0;
-    border-top: 3px solid #e31f72;
-    border-bottom: 3px solid #e31f72;
+    border-top: 3px solid #cccccc;
+    border-bottom: 3px solid #cccccc;
+
 
 }
 .more-about  {
@@ -1696,7 +1834,6 @@ li.individual-featured-work {
     font-size: 1.1em;
     font-family: 'Lato';
     font-weight: 100;
-    color:#333;
     margin: 0 0 8% 0;
 }
 
@@ -1864,6 +2001,7 @@ hr {
 }*/
 
 
+/*====================DESKTOP =====================*/
 /* =============== WORK / PORTFOLIO PAGE ================ */
 
 .work-intro {
@@ -1889,6 +2027,7 @@ hr {
 }
 
 
+/*====================DESKTOP =====================*/
 /* ============ CASE STUDIES - Individual Page =========== */
 
 .case-study {
@@ -1936,6 +2075,7 @@ aside.case-study-sidebar p {
 
 
 
+/*====================DESKTOP =====================*/
 /*==========BLOG ==============*/'
 .blog-intro {
     margin: -100% 0 0 0;
@@ -2016,6 +2156,7 @@ aside.case-study-sidebar p {
     margin-left: 3em;
 }
 
+/*====================DESKTOP =====================*/
 /*============== BLOG SIDEBAR =======*/
 
 #sidebar h2 {
@@ -2058,6 +2199,7 @@ aside.case-study-sidebar p {
 }
 
 
+/*====================DESKTOP =====================*/
 /*==================== Individual Blog Posts ============== */
 
 .entry-header h2 {
@@ -2092,6 +2234,7 @@ aside.case-study-sidebar p {
     text-decoration: none;
 }
 
+/*====================DESKTOP =====================*/
 /*=============== Contact Us =====================*/
 
 /* Created custom body class using the solution by Sam Kent below */ 
