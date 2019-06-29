@@ -41,20 +41,18 @@ get_header(); ?>
         			<?php endwhile; // end of the loop. ?>
                 <div class="more-about">
                     
-                <figure>
+                <figure class="about-image-top">
                     <?php echo wp_get_attachment_image($about_image_1, $size); ?>
                 </figure>
                 
-                    <h3><?php echo $more_about; ?></h3>
-                    <center><a class="button" href="<?php echo site_url('/blog/') ?>">View My Blog</a></center>
+                    <h3><?php /* echo $more_about; */ ?></h3>
+                    <p><?php echo $more_about; ?></p>
                     
                 </div>
     </div>
 </section>
     
         
-
-
 <section class="our-services">
     <div class="site-content clearfix">
          <?php while ( have_posts() ) : the_post(); 
@@ -132,7 +130,7 @@ get_header(); ?>
  <div class="site-content clearfix">
                 <div class="about-experience">
                     
-                <figure>
+                <figure class="about-image-bottom">
                     <?php echo wp_get_attachment_image($about_image_2, $size); ?>
                 </figure>
                 
@@ -144,8 +142,8 @@ get_header(); ?>
     <div class="about-cta"> 
         <h4> <?php echo $about_cta; ?></h4>  
         <div class="about-cta-buttons">
-        <a class="button" href="<?php echo site_url('/case-studies/') ?>">Work Projects</a>
-        <a class="button" href="<?php echo site_url('/blog/') ?>">Fun Projects</a>
+        <a class="button-transparent" href="<?php echo site_url('/case-studies/') ?>">Work Projects</a>
+        <a class="button-transparent" href="<?php echo site_url('/blog/') ?>">Fun Projects</a>
         </div>
  
     </div>
