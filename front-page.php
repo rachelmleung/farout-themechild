@@ -19,7 +19,7 @@ get_header(); ?>
         
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php the_content(); ?>
-				<a class="button" href="<?php echo site_url('/about/') ?>">About Me</a>
+				<a class="button" id="home-button" href="<?php echo site_url('/about/') ?>">About Me</a>
 			<?php endwhile; // end of the loop. ?>
 		</div><!-- .main-content -->
 	</div><!-- #primary -->
@@ -65,7 +65,6 @@ get_header(); ?>
 </section>
 
 <section class="home-bottom">
- <div class="site-content clearfix">
 
 <div class="slideshow-container">
 
@@ -95,7 +94,6 @@ get_header(); ?>
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
 
-  </div>
 </section>
 
 <?php get_footer(); ?>

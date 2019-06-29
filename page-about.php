@@ -39,15 +39,15 @@ get_header(); ?>
                 $size = 'medium';
             ?>
         			<?php endwhile; // end of the loop. ?>
-                <div class="more-about">
+                <div class="more-about-container">
                     
                 <figure class="about-image-top">
                     <?php echo wp_get_attachment_image($about_image_1, $size); ?>
                 </figure>
-                
+                <div class="more-about">
                     <h3><?php /* echo $more_about; */ ?></h3>
                     <p><?php echo $more_about; ?></p>
-                    
+                  </div>  
                 </div>
     </div>
 </section>
@@ -69,7 +69,7 @@ get_header(); ?>
     
             ?>
 
-        <h4><?php echo $services; ?></h4>
+        <h3><?php echo $services; ?></h3>
         <p><?php echo $services_intro; ?></p>
         
         
@@ -79,7 +79,7 @@ get_header(); ?>
 
                  <figure>
                     <?php /* echo wp_get_attachment_image($about_image_1, $size); */?>
-                     <h2><?php echo $service_1_title; ?></h2>
+                     <h4><?php echo $service_1_title; ?></h4>
                     <p><?php echo $service_1; ?></p>
                 </figure>
                 
@@ -91,7 +91,7 @@ get_header(); ?>
                     <figure>
                         <?php /*echo wp_get_attachment_image($about_image_2, $size);*/ ?>
                          <div class="service-text">
-                            <h2><?php echo $service_2_title; ?></h2>
+                            <h4><?php echo $service_2_title; ?></h4>
                             <p><?php echo $service_2; ?></p>
                         </div>
                      </figure>
@@ -104,7 +104,7 @@ get_header(); ?>
 
                  <figure>
                     <?php /* echo wp_get_attachment_image($service_image_3, $size);*/ ?>
-                     <h2><?php echo $service_3_title; ?></h2>                   
+                     <h4><?php echo $service_3_title; ?></h4>                   
                     <p><?php echo $service_3; ?></p>
                 </figure>
                 
@@ -127,7 +127,7 @@ get_header(); ?>
     
     
 <section class="about-bottom">
- <div class="site-content clearfix">
+
                 <div class="about-experience">
                     
                 <figure class="about-image-bottom">
@@ -142,13 +142,12 @@ get_header(); ?>
     <div class="about-cta"> 
         <h4> <?php echo $about_cta; ?></h4>  
         <div class="about-cta-buttons">
-        <a class="button-transparent" href="<?php echo site_url('/case-studies/') ?>">Work Projects</a>
+        <a class="button-transparent" id="about-cta-work-button" href="<?php echo site_url('/case-studies/') ?>">Work Projects</a>
         <a class="button-transparent" href="<?php echo site_url('/blog/') ?>">Fun Projects</a>
         </div>
  
     </div>
-     
-  </div>
+
 </section>
 
 

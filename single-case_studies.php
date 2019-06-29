@@ -24,6 +24,8 @@ get_header(); ?>
                 $image_2 = get_field('image_2');
                 $image_3 = get_field('image_3');
                 $image_before = get_field('image_before');
+                $case_study_info = get_field('case_study_info');
+                $case_study_more = get_field('case_study_more');
             ?>
             
             <article class="case-study">   
@@ -37,18 +39,36 @@ get_header(); ?>
                 </aside>
                 
                 <div class="case-study-images">
+                    <div class="case-study-image">
                     <?php if($image_1) {
                         echo wp_get_attachment_image( $image_1, $size ); 
                     }?>
+                    </div>
+                    <div class="case-study-image">
                     <?php if($image_2) {
                         echo wp_get_attachment_image( $image_2, $size ); 
                     }?>
+                    </div>
+                    
+                    <div class="case-study-info">
+                    <p><?php echo $case_study_info; ?></p>    
+                    </div>
+
+                    <div class="case-study-image">
                     <?php if($image_3) {
                         echo wp_get_attachment_image( $image_3, $size ); 
                     }?>
+                    </div>
+                    <div class="case-study-image">
                         <?php if($image_3) {
                         echo wp_get_attachment_image( $image_before, $size ); 
                     }?>
+                    </div>
+                    
+                    <div class="case-study-more">
+                    <p><?php echo $case_study_more; ?></p>
+                    </div>
+
                       
                     
                 </div>

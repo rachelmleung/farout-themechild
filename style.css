@@ -116,6 +116,10 @@ a.responsive-menu-item-link
     border-bottom: 1px solid #fff;
 }
 
+p {
+    font-size: .8em;
+}
+
 body.home.page-id-8 {
     background-color: #fff;
     background-image: url('https://image.ibb.co/gVs9QV/Galaxy-cloud-bg-v2.png');
@@ -306,7 +310,7 @@ transition: all 500ms ease;
 }
 
 .mySlides q {
-font-size: .9em;    
+font-size: .8em;    
 }
 .mySlides p {
 font-size: .7em;    
@@ -343,15 +347,15 @@ font-size: .7em;
 /* The dot/bullet/indicator container */
 .dot-container {
     text-align: center;
-    padding: 20px;
+    padding: .8em;
     background: #ddd;
 }
 
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 8px;
+  width: 8px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
@@ -443,13 +447,13 @@ li.individual-featured-work {
 .blog-cta-container {
     align-content: center;
     justify-content: center;
-    padding:8% 0 8% 0;
+    padding:0 0 15% 0;
     background:none;
 }
 
 .blog-cta-container img{
-    width:70%;
-    margin: 0 15% 10% 15%;
+    width:100%;
+    margin: 0 auto;
 }
 
 
@@ -508,6 +512,22 @@ li.get-to-know {
 
 }
 
+.about-intro h1 {
+    font-family: 'Monoton';
+    text-align: center;
+    font-size: 2em;
+    color: #e31f72;
+    line-height: normal;
+}
+
+.about-intro h4 {
+    font-family: 'Lato';
+    font-size: 1em;
+    margin:0 auto;
+    padding: 0 0 8% 0;
+    width:80%;
+    text-align: center;
+}
 .about-image-top {
     display: flex;
     justify-content: center;
@@ -577,32 +597,33 @@ li.get-to-know {
 }
 
 .our-services {
-    margin: 4% 0 0 0;
+    margin: 4% 5% 4% 5%;
+    padding: 4% 0 8% 0;
     background-color: #fff;
+    border: 3px solid #ddd;
 }
 
-.our-services h3{
-
-}
 
 .our-services h4 {
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: ;
     margin: 15% 0 0 0;
 }
 .our-services p {
-    text-align: center;
-    font-size: 1.1em;
+    text-align: left;
+    font-size: .9em;
     font-family: 'Lato';
     margin: 0;
     line-height: 1.8em;
 }
 
 .our-services h3{
-    margin: 2% 0 0 0;
-    font-size: 1em;
+    margin: 0 auto;
+    padding: 5% 0 0 0;
+    font-size: 1m;
     text-align: center;
+    width:80%;
 }
 
 ul.services-featured {
@@ -621,7 +642,7 @@ ul.services-featured {
 }
 
 .about-image-bottom {
-    display: flex;
+    display:flex;
     justify-content: center;
     align-content: center;
 }
@@ -629,7 +650,12 @@ ul.services-featured {
 .about-cta {
     margin: 20% 0 0 0;
     padding: 5% 0 5% 0;
-    background:Red;   
+    background-image: linear-gradient(360deg, #092BB5 0%, #e31f72   100%);  
+}
+.about-cta h4 {
+    margin: 0 auto;
+    padding:5% 4% 0 4%;
+    color:white;
 }
 
 .about-cta-buttons {
@@ -637,10 +663,16 @@ ul.services-featured {
     flex-direction: column;
     justify-content: space-between;
     align-content: space-between;
+    align-items: center;
+    margin: 0 0 5% 0;
 }
 
 .about-cta-buttons a.button{
     
+}
+
+#about-cta-work-button {
+    margin: 0 0 5% 0;
 }
 /*
 figure {
@@ -718,6 +750,10 @@ hr {
 
 }
 
+.about-experience {
+    margin:8% 5% 0 5%;
+}
+
 .about-bottom {
     margin:0 0 5% 0;
 }
@@ -752,7 +788,8 @@ hr {
     font-size:2em;
     color: #e31f72;
     line-height: normal;
-    padding: 1% 0 0 0;
+    margin: 0 auto;
+    padding: 5% 0 0 0;
 }
 
 .work-intro h4 {
@@ -771,7 +808,7 @@ hr {
 
 .case-study {
     width:100%;
-    margin: 8% 0 0 0;
+    margin: 0 0 0 0;
     display:flex;
     flex-direction: column;
 }
@@ -782,7 +819,7 @@ hr {
 aside.case-study-sidebar {
     width:100%;
     margin: 0 auto;
-    padding: 5% 0 5% 0;
+    padding: 0 0 5% 0;
     
 }
 aside.case-study-sidebar h2{
@@ -801,7 +838,6 @@ aside.case-study-sidebar h4{
 }
 
 aside.case-study-sidebar p {
-    font-size: .9em;
     margin: 0 0 10% 0;
     
 }
@@ -809,6 +845,10 @@ aside.case-study-sidebar p {
 .case-study-images {
     width:100%;
     margin: 0 auto;
+
+}
+.case-study-image {
+    margin: 0 0 5% 0;
 }
 
 .case-study-images img {
@@ -1075,9 +1115,25 @@ hr {
     display:inline-flex;
     justify-content: flex-end;
 }
-    
-    
-.home-intro h1 {
+
+
+
+
+    /* ============= TABLET ============*/ 
+/* ============= HOME - Featured Work ============*/ 
+ body.home.page-id-8 {
+    background-color: #fff;
+    background-image: url('https://image.ibb.co/gVs9QV/Galaxy-cloud-bg-v2.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top; 
+    opacity: 1;
+    background-size: contain;
+    padding: 0;
+    margin: 0;
+
+}   
+    .home-intro h1 {
     font-size:3.4em ;
     line-height: 1.8em;
     margin: 25% 0 0 0;
@@ -1104,22 +1160,29 @@ hr {
 }
 
 
-
-
-
-    /* ============= TABLET ============*/ 
-/* ============= HOME - Featured Work ============*/ 
 .featured-work .site-content {
     display:block;
 
 }
+    
+a#home-button.button {
+        margin:  5% 0 0 0;
+    }
 
+    
+.home-intro h3 {
+    margin: 0 0 8% 0;
+    padding:0;
+    }
 .featured-work {
     margin: 0 0 5% 0;
-    padding: 7% 0 8% 0;
-    
 
+    
 }
+section.featured-work {
+    background: #fff;
+    padding: 3% 0 8% 0;
+    }
 
 .featured-work h4 {
     text-align: center;
@@ -1158,9 +1221,130 @@ li.individual-featured-work {
     width:29%;
     margin: 0 2% 0 2%;
 }
+    
+
+.home-cta-buttons {
+    display:flex;  
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.work-cta-container {
+
+    background:none;
+    padding: 0;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+    
+}
+.blog-cta-container {
+    align-content: center;
+    align-items: baseline;
+    justify-content: center;
+    padding:0;
+    background:none;
+}
+
+.blog-cta-container img{
+    width:100%;
+    margin: 0 auto;
+}
+
+
+
+/* SLIDESHOW TESTIMONIALS - TEMPORARY LOCATION FOR CSS*/
+
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    margin: 0 auto;
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 5% 10% 5% 10%;
+  text-align: center;
+  background: #f1f1f1f1;
+}
+
+.mySlides q {
+font-size: .8em;    
+}
+.mySlides p {
+font-size: .7em;    
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -15%;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: .8em;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+
 
 .home-bottom {
     margin: 0 0 5% 0;
+    padding: 5% 0 0 0;
+  background: #f1f1f1f1;
+
 }
 .get-to-know {
 
@@ -1219,6 +1403,26 @@ li.get-to-know {
 }
 
 
+.more-about-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background:red;
+
+}
+    
+.about-image-top {
+    width: 50%;
+    flex-grow: 1;
+}
+    
+.more-about p {
+    width:50%; 
+    background:blue;
+    flex-grow: 3;
+    }
+
+    
 .about-page p {
     color:#0931B7;
     margin:;
@@ -1661,7 +1865,18 @@ aside.case-study-sidebar p {
 
 @media (min-width: 940px){
 
+ body.home.page-id-8 {
+    background-color: #fff;
+    background-image: url('https://image.ibb.co/gVs9QV/Galaxy-cloud-bg-v2.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center; 
+    opacity: 1;
+    background-size:cover;
+    padding: 0;
+    margin: 0;
 
+}   
 .hero-content {
     margin:0;
 }
