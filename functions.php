@@ -64,3 +64,19 @@ function faroutrachel_theme_child_widget_init() {
 	
 }
 add_action( 'widgets_init', 'faroutrachel_theme_child_widget_init' );
+
+/*function custom_excerpt_length( $length ) {
+	return 55;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );*/
+
+/* this prevents the [...] orphan and ends it at the end of a sentence*/
+function end_with_sentence( $excerpt ) {
+
+  if ( ( $pos = mb_strrpos( $excerpt, '.' ) ) !== false ) {
+    $excerpt = substr( $excerpt, 0, $pos + 1 );
+  }
+
+  return $excerpt;
+}
+add_filter( 'the_excerpt', 'end_with_sentence' );

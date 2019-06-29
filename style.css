@@ -744,7 +744,7 @@ hr {
 
 .work-intro {
     width:100%;
-    margin: -10% 0 -4% 0;
+    margin: 0 auto;
 }
 .work-intro h1 {
     font-family: 'Monoton';
@@ -772,15 +772,22 @@ hr {
 .case-study {
     width:100%;
     margin: 8% 0 0 0;
+    display:flex;
+    flex-direction: column;
+}
+
+.case-study-sidebar {
+        flex-direction: column;
 }
 aside.case-study-sidebar {
-    width:96%;
-    margin: 2% 2% 0 2%;
+    width:100%;
+    margin: 0 auto;
+    padding: 5% 0 5% 0;
     
 }
 aside.case-study-sidebar h2{
     font-weight: bold;
-    margin: 25% 0 0 0;
+    margin: 5% 0 0 0;
     color: #666;
     
 }
@@ -794,20 +801,20 @@ aside.case-study-sidebar h4{
 }
 
 aside.case-study-sidebar p {
-    font-size: 1em;
+    font-size: .9em;
     margin: 0 0 10% 0;
     
 }
 
 .case-study-images {
-    width:96%;
-    margin: 7% 2% 15% 2%;
+    width:100%;
+    margin: 0 auto;
 }
 
 .case-study-images img {
     display:block;
     border: 1px solid #838383;
-    margin: 0 0 10% 0;
+    margin: 0;
     width:100%;
 }
 
@@ -1411,7 +1418,8 @@ hr {
 /* =============== WORK / PORTFOLIO PAGE ================ */
 
 .work-intro {
-    margin: -10% 0 -4% 0;
+    margin: 0 0 2% 0;
+    padding: 0;
 }
 .work-intro h1 {
     font-family: 'Monoton';
@@ -1419,13 +1427,15 @@ hr {
     font-size: 3em;
     color: #e31f72;
     line-height: normal;
-    padding: 1% 0 0 0;
+    padding: 2% 0 0 0;
+    margin: 0 0 1% 0;
 }
 
 .work-intro h4 {
     font-family: 'Lato';
     font-size: 1em;
-    margin:-3% 20% 0 20%;
+    margin:0 auto;
+    padding: 0;
     width:60%;
     text-align: center;
     color: #092bb5;
@@ -1434,20 +1444,38 @@ hr {
 
     /* ============ TABLET =========== */
 /* ============ CASE STUDIES - Individual Page =========== */
-
+.case-studies-container {
+    width:100%;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: row;
+    }
 .case-study {
     width:100%;
     margin: 0 0 0 0;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
+    
+
 aside.case-study-sidebar {
     width:100%;
-    float:left;
-    margin: 0 7% 0 0;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
     
 }
+    
+    .case-study-info {
+    width:60%;
+    margin:0 ;
+    }
 aside.case-study-sidebar h2{
     font-weight: bold;
     color: #666;
+    margin: 0 auto;
     
 }
 
@@ -1460,21 +1488,21 @@ aside.case-study-sidebar h4{
 }
 
 aside.case-study-sidebar p {
-    font-size: 1em;
+    font-size: .8em;
     margin: 0 0 0% 0;
     
 }
 
 .case-study-images {
-    float:left;
-    width:80%;
-    margin: 7% 10% 0% 10%;
+    display:block;
+    width:35%;
+    margin: 0 auto;
 }
 
 .case-study-images img {
     display:block;
     border: 1px solid #838383;
-    margin: 0 0 0 0;
+    margin: 5% 0 0 0;
     width:100%;
 }
 
@@ -2043,7 +2071,8 @@ hr {
 /* =============== WORK / PORTFOLIO PAGE ================ */
 
 .work-intro {
-    margin: -10% 0 -4% 0;
+    margin: 0 auto;
+    padding: 0 0 2% 0;
 }
 .work-intro h1 {
     font-family: 'Monoton';
@@ -2057,7 +2086,7 @@ hr {
 .work-intro h4 {
     font-family: 'Lato';
     font-size: 1.3em;
-    margin:-3% 0 0 0;
+    margin:0 auto;
     width:100%;
     text-align: center;
     color: #092bb5;
@@ -2068,19 +2097,39 @@ hr {
 /*====================DESKTOP =====================*/
 /* ============ CASE STUDIES - Individual Page =========== */
 
+.case-studies-container {
+    width:100%;
+    margin: 0 auto;
+
+    display:flex;
+    flex-direction: row;
+    }
 .case-study {
     width:100%;
-    margin: 8% 0 0 0;
+    margin: 0 0 0 0;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
+    
+
 aside.case-study-sidebar {
-    width:33%;
-    float:left;
-    margin: 2% 7% 0 0;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
     
 }
+    
+    .case-study-info {
+    width:50%;
+    margin: 0 3% 0 0 ;
+    }
 aside.case-study-sidebar h2{
     font-weight: bold;
     color: #666;
+    margin: 0 auto;
     
 }
 
@@ -2093,25 +2142,23 @@ aside.case-study-sidebar h4{
 }
 
 aside.case-study-sidebar p {
-    font-size: 1em;
-    margin: 0 0 10% 0;
+    font-size: .9em;
+    margin: 0 0 0% 0;
     
 }
 
 .case-study-images {
-    float:left;
-    width:60%;
-    margin: 7% 0 7% 0;
+    display:block;
+    width:40%;
+    margin: 0 auto;
 }
 
 .case-study-images img {
     display:block;
     border: 1px solid #838383;
-    margin: 0 0 10% 0;
+    margin: 0 0 0 0;
     width:100%;
 }
-
-
 
 /*====================DESKTOP =====================*/
 /*==========BLOG ==============*/'
