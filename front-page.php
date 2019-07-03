@@ -25,7 +25,6 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <section class="featured-work">
-    <div class="site-content clearfix">
       <!--  <h4>Featured Work</h4> -->
         
     
@@ -61,7 +60,6 @@ get_header(); ?>
                         <a class="button-transparent" href="<?php echo site_url('/blog/') ?>">Art Projects</a>
                 </div>
         </div>   
-    </div>
 </section>
 
 <section class="home-bottom">

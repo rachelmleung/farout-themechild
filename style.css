@@ -734,6 +734,7 @@ section.featured-work {
     display: flex;
     background: white;
     padding: 15% 0 0 0;
+    justify-content: center;
 }
 .about-contact {
     margin: 0;
@@ -856,7 +857,17 @@ aside.case-study-sidebar p {
     border: 1px solid #838383;
     margin: 0;
     width:100%;
+      -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
 }
+
+
+.case-study-images img:hover {
+  transition: filter .5s ease-in-out;
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+}
+
 
 /*==========MOBILE ==============*/
 /*==========BLOG ==============*/
@@ -1182,6 +1193,8 @@ a#home-button.button {
 section.featured-work {
     background: #fff;
     padding: 3% 0 8% 0;
+    margin: 0 auto;
+justify-content:center;
     }
 
 .featured-work h4 {
@@ -1402,32 +1415,47 @@ li.get-to-know {
     width:100%;
 }
 
-
-.more-about-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background:red;
-
-}
-    
-.about-image-top {
-    width: 50%;
-    flex-grow: 1;
-}
-    
-.more-about p {
-    width:50%; 
-    background:blue;
-    flex-grow: 3;
+section.main-about-me {
+        margin:0 auto;
+        padding: 0;
     }
+.about-intro h4 {
+        margin:  0 auto;
+        padding: 0;
+    }
+    
+    
+.more-about-container {
+    display:block;
+    margin: 0 auto;
+    padding: 0 ;
+
+}
+    
+figure.about-image-top {
+    width: 40%;
+    float:left;
+    margin:0;
+    padding: 4% 5% 0 0;
+}
+.about-image-top img{
+    margin: 0 auto;    
+}
+
+div.more-about {
+    
+    background:blue;
+
+    }
+.more-about-container h3 {
+    margin:3% 0 0 0;    }
+    
+.more-about-container p {
+    margin: 0 0 0;    }
 
     
 .about-page p {
     color:#0931B7;
-    margin:;
-    width:100%;
-    font-size:;
     padding: 5% 0 7% 0;
     text-align: center;
 
@@ -1487,9 +1515,12 @@ li.get-to-know {
 }
 
 .our-services {
-    margin: 4% 0 0 0;
+    margin: 4% 5% 0 5%;
     background-color: #fff;
+
 }
+
+    
 
 .our-services h3{
 
@@ -1498,7 +1529,7 @@ li.get-to-know {
 .our-services h4 {
     text-align: center;
     text-transform: uppercase;
-    font-size: 1.8em;
+    font-size:;
     margin: 15% 0 0 0;
 }
 .our-services p {
@@ -1515,14 +1546,21 @@ li.get-to-know {
     text-align: center;
 }
 
+    
+    /* USE THIS STYLE FOR DESKTOP. TABLET SHOULD BE cOLUMN*/
 ul.services-featured {
     list-style-type: none;
-    margin: 5% 0 3% 0;
+    margin: 0 auto;
     padding: 0;
+    display:flex;
+    flex-direction: row;
 }
 
 .services-featured {
-    width:100%;
+    width:30%;
+    margin:  0 auto;
+    justify-content: center;
+    align-content: center;
     
 }
 
@@ -1579,7 +1617,24 @@ li.individual-featured-service:nth-child(even) p {
 }
 
 */
+    
+    .about-bottom {
+        padding:0;
+        margin: 0 auto;
 
+    }
+    
+    .about-experience {
+         padding:0 0 5% 0;
+        margin: 0 auto;      
+                width:82%;
+    }
+figure.about-image-bottom {
+    width: 40%;
+    float:right;
+    margin:0;
+    padding: 4% 0 0 5%;
+}
 
 .about-contact {
     margin: 0;
@@ -1596,12 +1651,10 @@ hr {
 
 }
 
-.about-bottom {
-    margin:0 0 5% 0;
-}
+.about-cta {
 
-.about-cta hr {
-
+    margin: 0 auto;
+    
 }
 
 .about-cta h4 {

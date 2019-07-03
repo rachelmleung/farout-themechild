@@ -36,6 +36,7 @@ get_header(); ?>
                 $about_image_2 = get_field('about_image_2');
                 $service_2 = get_field('service_2');
                 $service_3 = get_field('service_3');
+                $about_headline = get_field('about_headline');
                 $size = 'medium';
             ?>
         			<?php endwhile; // end of the loop. ?>
@@ -44,17 +45,14 @@ get_header(); ?>
                 <figure class="about-image-top">
                     <?php echo wp_get_attachment_image($about_image_1, $size); ?>
                 </figure>
-                <div class="more-about">
-                    <h3><?php /* echo $more_about; */ ?></h3>
-                    <p><?php echo $more_about; ?></p>
-                  </div>  
+                    <h3><?php echo $about_headline; ?></h3>
+                    <p><?php echo $more_about; ?></p> 
                 </div>
     </div>
 </section>
     
         
 <section class="our-services">
-    <div class="site-content clearfix">
          <?php while ( have_posts() ) : the_post(); 
 
             
@@ -122,7 +120,6 @@ get_header(); ?>
             <a href="../contact-us"><button>Contact Us</button></a>
         </div><br>-->
 
-    </div>
 </section> 
     
     
